@@ -1,1 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,600;1,14..32,600&display=swap');
+
+
+
 /* Home Page CSS */
+
+
+/* header */
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2em 5em;
+}
+header ul {
+    display: flex;
+    gap: 4em;
+}
+header ul li a{
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    color: black;
+    font-size: 1.5em;
+}
+header ul li{
+    list-style-type: none;
+}   
+header > a{
+    padding-left: .9em;
+}
+
+.logsign button{
+    height: 3em;
+    width: 5em;
+    border-radius: 30em;
+    border: none;
+    outline: none;
+    font-family: "inter" , sans-serif;
+    font-weight: 400;
+}
+.logsign button:first-child{
+    width: 10em;
+    position: relative;
+    left: 5.1em;
+    padding-right: 5em;
+    background-color: #7895CB;
+    transition: ease .4s;
+    color: white;
+}
+.logsign button:first-child:hover{
+    background-color: #402E7A;
+}
+.logsign button:last-child{
+    background-color: white;
+    position: relative;
+    width: 6em;
+    color: #5C59A8;
+    transition: ease .4s;
+}
+.logsign button:last-child:hover{
+    background-color: #c0bfbf;
+}
+
+
