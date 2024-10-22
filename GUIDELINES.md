@@ -14,12 +14,19 @@
 - **About Us Page**: [***Abdellatif***] (HTML/CSS)
 
 ### Coding Guidelines
+**HTML Classes/IDs**: 
+- Use lowercase with hyphens (e.g., `contact-form`).
 - Follow the BEM methodology for CSS class naming.
 - Ensure all HTML is semantically correct.
 - Use mobile-first design principles for responsiveness.
+
 
 ### GitHub Workflow
 - **Make Sure to :**
 - Always create a new branch for your work.
 - Use meaningful commit messages.
 - Open a pull request for review before merging.
+- Regularly pull from `main` to avoid conflicts.
+
+## Testing and Responsiveness
+- Test all changes locally before pushing.
