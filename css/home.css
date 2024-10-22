@@ -26,6 +26,7 @@ header ul li a{
     font-weight: 600;
     color: black;
     font-size: 1.5em;
+    color: white;
 }
 header ul li{
     list-style-type: none;
@@ -77,15 +78,16 @@ header > a{
     font-optical-sizing: auto;
     font-weight: 400;
     font-size: 60px;
+    color: white;
 }
 .Home-inputs{
     
 }
 .Home-inputs button{
-    width: 13em;
+    width: 14em;
     height: 5em;
     border-radius: 1.1em;
-    margin-right: 3em;
+    margin-right: 2em;
     border: none;
     outline: none;
     background-color: #7896cc;
@@ -119,7 +121,41 @@ header > a{
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
-    
+    width: 100%;
 }
 
+/* ourservices */
 
+
+.ourservices > h2{
+    text-align: center;
+    margin: 3em 0;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 2.5em;
+}
+
+.box{
+    display: flex;
+    gap: 2em;
+}
+.box :last-child h2{
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+}
+.box :last-child p{
+    font-family: "Inter", sans-serif;
+    font-weight: 200;
+}
+
+.box img{
+    height: 9em;
+    width: auto;
+}
+
+.box-container{
+    margin: 0 0 0 16em;
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 8em;
+}
