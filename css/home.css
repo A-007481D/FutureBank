@@ -52,6 +52,7 @@ header > a{
     background-color: #7895CB;
     transition: ease .4s;
     color: white;
+    cursor: pointer;
 }
 .logsign button:first-child:hover{
     background-color: #402E7A;
@@ -62,6 +63,7 @@ header > a{
     width: 6em;
     color: #5C59A8;
     transition: ease .4s;
+    cursor: pointer;
 }
 .logsign button:last-child:hover{
     background-color: #c0bfbf;
@@ -103,6 +105,7 @@ header > a{
     font-family: "Inter", sans-serif;
     font-weight: 400;
     font-size: 1.6em;
+    cursor: pointer;
 }
 .Home-inputs button p {
     position: relative;
@@ -124,7 +127,11 @@ header > a{
     width: 100%;
 }
 
+
+
 /* ourservices */
+
+
 
 
 .ourservices > h2{
@@ -159,3 +166,175 @@ header > a{
     grid-template-columns: auto auto;
     row-gap: 8em;
 }
+
+
+/* investment Styles */
+
+
+
+.investment-section > h2{
+    text-align: center;
+    margin: 3em 0;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 2.5em;
+}
+.inv-container{
+    display: grid;
+    grid-template-columns:  auto auto;
+    justify-content: center;
+    gap: 6em;
+}
+.inv-container img{
+    height: 22em;
+}
+.inv{
+    height: 22em;
+    background-color: #D9D9D9;
+    width: 35em;
+    display: flex;
+    gap: 2em;
+    border-radius: .9em;
+}
+.inv span h2{
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 2em;
+}
+.inv span p {
+    font-family: "Inter", sans-serif;
+    font-weight: 25;
+}
+
+#LearnMore1{
+    font-family: "Inter", sans-serif;
+    font-weight: 25;
+    position: relative;
+    left: 12em;
+    top: 3.4em;
+    color: black;
+    text-decoration: none;
+}
+#LearnMore1:hover{
+    text-decoration:underline;
+}
+#LearnMore2{
+    font-family: "Inter", sans-serif;
+    font-weight: 25;
+    position: relative;
+    left: 12em;
+    top: 5.7em;
+    color: black;
+    text-decoration: none;
+}
+#LearnMore2:hover{
+    text-decoration:underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+@media (max-width: 600px) {
+    .back {
+        width: 250%;
+    }
+    
+    .box-container{
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .box img{
+        padding: ;
+        width: 12em;
+        height: 12em;
+    }
+    .ourservices > h2{
+        padding-left: 10em;
+        font-weight: 800;
+        
+    }
+    .box span h2{
+        font-size: xxx-large;
+    }
+    .box span p{
+        font-size: xx-large;
+    }
+
+} */
+
+/* @media (max-width: 768px) { 
+    header {
+        background-color: #fff; 
+        box-shadow: none; 
+    }
+
+    .navbar {
+        display: none; 
+    }
+
+    .navbar.open {
+        display: block; 
+        position: absolute; 
+        top: 60px; 
+        left: 0;
+        width: 100%;
+        background-color: #fff; 
+    }
+
+    #menu-icon {
+        font-size: 30px; 
+        cursor: pointer; 
+    }
+
+    header.sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000; 
+    }
+} */
