@@ -44,6 +44,16 @@ header > a{
     font-family: "inter" , sans-serif;
     font-weight: 400;
 }
+
+.logsign button a{
+    text-decoration: none;
+    color:white ;
+}
+
+.logsign button:last-child a{
+    color: #5C59A8;
+}
+
 .logsign button:first-child{
     width: 10em;
     position: relative;
@@ -82,6 +92,65 @@ header > a{
     font-size: 60px;
     color: white;
 }
+.Home-inputs button{
+    cursor: pointer;
+}
+.Home-inputs button {
+    width: 14em;
+    height: 5em;
+    border-radius: 1.1em;
+    margin-right: 2em;
+    border: none;
+    outline: none;
+    background-color: ;
+    color: white;
+    transition: ease .4s;
+}
+.Home-inputs button:hover{
+    background-color:#402E7A ;
+}
+.Home-inputs :last-child{
+    text-decoration: none;
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 1.6em;
+    cursor: pointer;
+}
+.Home-inputs button p {
+    position: relative;
+    bottom : .1em;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+}
+.Home-inputs :last-child img{
+    position: relative;
+    left: .2em;
+    top: .1em;
+}
+.back{
+    background-image: url(/HomeImg/background2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+
+
+
+/* HomeSection */
+
+.First-Home-elements{
+    margin: 8em;
+}
+.First-Home-elements > h2 {
+    font-family: "Anek Devanagari", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 60px;
+    color: white;
+}
 .Home-inputs{
     
 }
@@ -92,7 +161,7 @@ header > a{
     margin-right: 2em;
     border: none;
     outline: none;
-    background-color: #7896cc;
+    background-color: #49608b;
     color: white;
     transition: ease .4s;
 }
@@ -130,7 +199,6 @@ header > a{
 
 
 /* ourservices */
-
 
 
 
@@ -231,9 +299,44 @@ header > a{
     text-decoration:underline;
 }
 
+.investment-section input{
+    margin: 4em 41em;
+    width: 12em;
+    height: 3em;
+    border-radius: .9em;
+    border: none;
+    background-color: #7895CB;
+    color: white;
+    cursor: pointer;
+    transition-duration: .4s;
+}
+.investment-section input[value]{
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 1em;
+}
+.investment-section input:hover{
+    background-color: #402E7A;
+}
 
 
+/* WhychooseFutureBank */
 
+.Chcontainer{
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    margin-left: 2em;
+}
+
+.ChooseFutureBank h2{
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 2em;
+    text-align: center;
+}
+.Chcontainer img{
+    margin: 0 0 6em 6em;
+}
 
 
 
