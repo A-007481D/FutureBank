@@ -99,6 +99,7 @@ header > a{
   font-family: "inter" , sans-serif;
   border-radius: 2em;
   border-style: none;
+  outline: none;
 }
 .contact form textarea {
   padding-left: 1.5em;
