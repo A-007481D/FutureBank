@@ -241,9 +241,44 @@ header > a{
     text-decoration:underline;
 }
 
+.investment-section input{
+    margin: 4em 41em;
+    width: 12em;
+    height: 3em;
+    border-radius: .9em;
+    border: none;
+    background-color: #7895CB;
+    color: white;
+    cursor: pointer;
+    transition-duration: .4s;
+}
+.investment-section input[value]{
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 1em;
+}
+.investment-section input:hover{
+    background-color: #402E7A;
+}
 
 
+/* WhychooseFutureBank */
 
+.Chcontainer{
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    margin-left: 2em;
+}
+
+.ChooseFutureBank h2{
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 2em;
+    text-align: center;
+}
+.Chcontainer img{
+    margin: 0 0 6em 6em;
+}
 
 
 
