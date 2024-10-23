@@ -1,1 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,600;1,14..32,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari&display=swap');
+
+
 /* Home Page CSS */
+
+
+/* header */
+body{
+    margin: 0;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2em 5em;
+}
+header ul {
+    display: flex;
+    gap: 4em;
+}
+header ul li a{
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    color: black;
+    font-size: 1.5em;
+    color: white;
+}
+header ul li{
+    list-style-type: none;
+}   
+header > a{
+    padding-left: .9em;
+}
+
+.logsign button{
+    height: 3em;
+    width: 5em;
+    border-radius: 30em;
+    border: none;
+    outline: none;
+    font-family: "inter" , sans-serif;
+    font-weight: 400;
+}
+.logsign button:first-child{
+    width: 10em;
+    position: relative;
+    left: 5.1em;
+    padding-right: 5em;
+    background-color: #7895CB;
+    transition: ease .4s;
+    color: white;
+    cursor: pointer;
+}
+.logsign button:first-child:hover{
+    background-color: #402E7A;
+}
+.logsign button:last-child{
+    background-color: white;
+    position: relative;
+    width: 6em;
+    color: #5C59A8;
+    transition: ease .4s;
+    cursor: pointer;
+}
+.logsign button:last-child:hover{
+    background-color: #c0bfbf;
+}
+
+
+/* HomeSection */
+
+.First-Home-elements{
+    margin: 8em;
+}
+.First-Home-elements > h2 {
+    font-family: "Anek Devanagari", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 60px;
+    color: white;
+}
+.Home-inputs{
+    
+}
+.Home-inputs button{
+    width: 14em;
+    height: 5em;
+    border-radius: 1.1em;
+    margin-right: 2em;
+    border: none;
+    outline: none;
+    background-color: #7896cc;
+    color: white;
+    transition: ease .4s;
+}
+.Home-inputs button:hover{
+    background-color:#402E7A ;
+}
+.Home-inputs :last-child{
+    text-decoration: none;
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 1.6em;
+    cursor: pointer;
+}
+.Home-inputs button p {
+    position: relative;
+    bottom : .1em;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+}
+.Home-inputs :last-child img{
+    position: relative;
+    left: .2em;
+    top: .1em;
+}
+.back{
+    background-image: url(/HomeImg/background2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+
+
+
+/* ourservices */
+
+
+
+
+.ourservices > h2{
+    text-align: center;
+    margin: 3em 0;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 2.5em;
+}
+
+.box{
+    display: flex;
+    gap: 2em;
+}
+.box :last-child h2{
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+}
+.box :last-child p{
+    font-family: "Inter", sans-serif;
+    font-weight: 200;
+}
+
+.box img{
+    height: 9em;
+    width: auto;
+}
+
+.box-container{
+    margin: 0 0 0 16em;
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 8em;
+}
+
+
+/* investment Styles */
+
+
+
+.investment-section > h2{
+    text-align: center;
+    margin: 3em 0;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 2.5em;
+}
+.inv-container{
+    display: grid;
+    grid-template-columns:  auto auto;
+    justify-content: center;
+    gap: 6em;
+}
+.inv-container img{
+    height: 22em;
+}
+.inv{
+    height: 22em;
+    background-color: #D9D9D9;
+    width: 35em;
+    display: flex;
+    gap: 2em;
+    border-radius: .9em;
+}
+.inv span h2{
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 2em;
+}
+.inv span p {
+    font-family: "Inter", sans-serif;
+    font-weight: 25;
+}
+
+#LearnMore1{
+    font-family: "Inter", sans-serif;
+    font-weight: 25;
+    position: relative;
+    left: 12em;
+    top: 3.4em;
+    color: black;
+    text-decoration: none;
+}
+#LearnMore1:hover{
+    text-decoration:underline;
+}
+#LearnMore2{
+    font-family: "Inter", sans-serif;
+    font-weight: 25;
+    position: relative;
+    left: 12em;
+    top: 5.7em;
+    color: black;
+    text-decoration: none;
+}
+#LearnMore2:hover{
+    text-decoration:underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+@media (max-width: 600px) {
+    .back {
+        width: 250%;
+    }
+    
+    .box-container{
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .box img{
+        padding: ;
+        width: 12em;
+        height: 12em;
+    }
+    .ourservices > h2{
+        padding-left: 10em;
+        font-weight: 800;
+        
+    }
+    .box span h2{
+        font-size: xxx-large;
+    }
+    .box span p{
+        font-size: xx-large;
+    }
+
+} */
+
+/* @media (max-width: 768px) { 
+    header {
+        background-color: #fff; 
+        box-shadow: none; 
+    }
+
+    .navbar {
+        display: none; 
+    }
+
+    .navbar.open {
+        display: block; 
+        position: absolute; 
+        top: 60px; 
+        left: 0;
+        width: 100%;
+        background-color: #fff; 
+    }
+
+    #menu-icon {
+        font-size: 30px; 
+        cursor: pointer; 
+    }
+
+    header.sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000; 
+    }
+} */
