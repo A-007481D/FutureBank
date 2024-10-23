@@ -92,65 +92,6 @@ header > a{
     font-size: 60px;
     color: white;
 }
-.Home-inputs button{
-    cursor: pointer;
-}
-.Home-inputs button {
-    width: 14em;
-    height: 5em;
-    border-radius: 1.1em;
-    margin-right: 2em;
-    border: none;
-    outline: none;
-    background-color: ;
-    color: white;
-    transition: ease .4s;
-}
-.Home-inputs button:hover{
-    background-color:#402E7A ;
-}
-.Home-inputs :last-child{
-    text-decoration: none;
-    color: white;
-    font-family: "Inter", sans-serif;
-    font-weight: 400;
-    font-size: 1.6em;
-    cursor: pointer;
-}
-.Home-inputs button p {
-    position: relative;
-    bottom : .1em;
-    font-family: "Inter", sans-serif;
-    font-weight: 400;
-}
-.Home-inputs :last-child img{
-    position: relative;
-    left: .2em;
-    top: .1em;
-}
-.back{
-    background-image: url(/HomeImg/background2.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-    width: 100%;
-}
-
-
-
-/* HomeSection */
-
-.First-Home-elements{
-    margin: 8em;
-}
-.First-Home-elements > h2 {
-    font-family: "Anek Devanagari", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-size: 60px;
-    color: white;
-}
 .Home-inputs{
     
 }
@@ -161,7 +102,7 @@ header > a{
     margin-right: 2em;
     border: none;
     outline: none;
-    background-color: #49608b;
+    background-color: #7896cc;
     color: white;
     transition: ease .4s;
 }
@@ -199,6 +140,7 @@ header > a{
 
 
 /* ourservices */
+
 
 
 
