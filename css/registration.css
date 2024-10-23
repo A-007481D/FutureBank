@@ -136,7 +136,7 @@ header > a{
   margin-right: 13em;
 }
 .content h2 {
-  font-size: 9vh;
+  font-size: 8vh;
   color: #fff;
 } 
 .content p {
@@ -149,4 +149,19 @@ hr {
   width: 5em;
   border: #fff solid 0.2em;
   border-radius: 1em;
+}
+.btn {
+  width: 10em;
+  background-color: #7895CB;
+  color: #fff;
+  font-weight: 600;
+  font-size: 2vh;
+  height: 3.5em;
+  font-family: "inter" , sans-serif;
+  border-radius: 2em;
+  border-style: none;
+  outline: none;
+}
+.btn:hover {
+  background-color: #402E7A;
 }
