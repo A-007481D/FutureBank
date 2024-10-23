@@ -1,1 +1,40 @@
 /* Loan Page CSS */
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+.containerHeader{
+    background-color: #4A55A2;
+}
+/* header{ 
+    background-image: url('../images/loan.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 33%; 
+} */ header::before {
+    content: "";
+    /* position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; */
+    background-image: url('your-background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.33; /* Apply opacity to the background */
+   /* z-index: 1;  Ensure it is behind the nav */
+  }
+
+
+nav ul{
+    display: flex;
+}
+nav ul .items{
+    padding-top: 20px;
+}
+nav ul li a {
+    color: white;
+}
