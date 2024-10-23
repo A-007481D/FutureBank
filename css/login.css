@@ -42,6 +42,16 @@ header > a{
   font-family: "inter" , sans-serif;
   font-weight: 400;
 }
+
+.logsign button a{
+  text-decoration: none;
+  color:white ;
+}
+
+.logsign button:last-child a{
+  color: #5C59A8;
+}
+
 .logsign button:first-child{
   width: 10em;
   position: relative;
@@ -117,7 +127,7 @@ header > a{
   font-weight: 600;
   font-size: 2vh;
   padding: 0;
-  margin-left: 10.5em;
+  margin-left: 8.5em;
   margin-top: 2em;
 }
 .contact form .btn:hover {
@@ -164,4 +174,8 @@ hr {
 }
 .btn:hover {
   background-color: #402E7A;
+}
+a {
+  text-decoration: none;
+  color: #fff;
 }
