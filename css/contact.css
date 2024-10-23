@@ -61,6 +61,14 @@ header > a{
   color: #5C59A8;
   transition: ease .4s;
 }
+.logsign button a{
+  text-decoration: none;
+  color:white ;
+}
+
+.logsign button:last-child a{
+  color: #5C59A8;
+}
 .logsign button:last-child:hover{
   background-color: #c0bfbf;
 }

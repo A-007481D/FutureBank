@@ -44,6 +44,16 @@ header > a{
     font-family: "inter" , sans-serif;
     font-weight: 400;
 }
+
+.logsign button a{
+    text-decoration: none;
+    color:white ;
+}
+
+.logsign button:last-child a{
+    color: #5C59A8;
+}
+
 .logsign button:first-child{
     width: 10em;
     position: relative;
