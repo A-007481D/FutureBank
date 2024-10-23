@@ -14,21 +14,18 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     height: 400px;
-}
-    
+}   
 nav{
+/* - */
 display: flex;
 justify-content: space-between;
 padding: 2em 5em; 
 }
-
 header ul {
     display: flex;
     gap: 4em;
+    margin-top: 1em;
 }
-/* #logo{
-    margin-bottom: 10px;
-} */
 header ul li a{
     text-decoration: none;
     font-family: "Inter", sans-serif;
@@ -52,6 +49,7 @@ header > a{
     outline: none;
     font-family: "inter" , sans-serif;
     font-weight: 400;
+    margin-top: 1em;
 }
 .logsign button:first-child{
     width: 10em;
@@ -160,13 +158,12 @@ h3{
     width: 45rem;
     height: 30rem;
     background-color: #7895CB;
-    padding: 2rem 0rem;
-    
+    padding: 2rem 0rem;   
 }
 .imagecouteForm{
     width: 20rem;
     height: 30rem;
-    border-radius: 44px;
+    /* border-radius: 44px; */
 }
 form{
     width: 20rem;
@@ -176,7 +173,7 @@ form{
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 90%;
-    border-radius: 44px;
+    /* border-radius: 44px; */
     display: flex;
     flex-direction: column;
     padding-top: 5rem;
@@ -201,4 +198,50 @@ textarea{
 }
 .sectionFormulairecontact{
     margin-top: 5rem;
+}
+
+footer{
+    margin-top: 3rem;
+    height: 30rem;
+    background-color: #4A55A2;
+}
+.logo{
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+.containerfooter{
+    margin-top: 5rem;
+    display: flex;
+    gap :10rem;
+    justify-content: center;
+    color: white; 
+}
+.grandTitreFooter{
+    font-size: x-large;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.elementsFooter{
+    line-height: 2em;
+}
+
+#socials{
+    text-align: center;
+}
+.imagelink{
+    display: flex;
+    gap:10px
+}
+
+.imagelink img{
+    width: 40px;
+}
+.inputFooter{
+    position: relative;
+}
+.inputFooter{
+    width: 15vw;
+}
+.btefooter{
+   position: absolute;
 }
