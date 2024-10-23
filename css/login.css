@@ -1,1 +1,167 @@
 /* Login Page CSS */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,600;1,14..32,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari&display=swap');
+/* header */
+body{
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2em 5em;
+  background-color: #4A55A2;
+}
+header ul {
+  display: flex;
+  gap: 4em;
+}
+header ul li a{
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  color: black;
+  font-size: 1.5em;
+  color: white;
+}
+header ul li{
+  list-style-type: none;
+}   
+header > a{
+  padding-left: .9em;
+}
+
+.logsign button{
+  height: 3em;
+  width: 5em;
+  border-radius: 30em;
+  border: none;
+  outline: none;
+  font-family: "inter" , sans-serif;
+  font-weight: 400;
+}
+.logsign button:first-child{
+  width: 10em;
+  position: relative;
+  left: 5.1em;
+  padding-right: 5em;
+  background-color: #7895CB;
+  transition: ease .4s;
+  color: white;
+}
+.logsign button:first-child:hover{
+  background-color: #402E7A;
+}
+.logsign button:last-child{
+  background-color: white;
+  position: relative;
+  width: 6em;
+  color: #5C59A8;
+  transition: ease .4s;
+}
+.logsign button:last-child:hover{
+  background-color: #c0bfbf;
+}
+.body{
+  display: flex;
+  flex-direction: row-reverse;
+}
+.contact {
+  display: flex;
+  justify-content: right;
+  margin-top: 8em;
+  margin-right: 10.375em;
+  margin-bottom: 8em;
+}
+.contact h2{
+  color: #fff;
+  font-size: 6vh;
+  text-align: center;
+  z-index: 1;
+}
+.contact form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 21.375em;
+  height: 25.75em;
+  background-color: #4A55A2;
+  border-radius: 2em;
+}
+.contact form input{
+  padding-left: 1.5em;
+  margin-bottom: 2em;
+  width: 20.81em;
+  height: 3.5em;
+  font-family: "inter" , sans-serif;
+  border-radius: 2em;
+  border-style: none;
+  outline: none;
+}
+.contact form textarea {
+  padding-left: 1.5em;
+  padding-top: 1.5em;
+  font-family: "inter" , sans-serif;
+  width: 20em;
+  height: 10em;
+  border-radius: 1em;
+  resize: none;
+}
+.contact form .btn {
+  width: 10em;
+  background-color: #7895CB;
+  color: #fff;
+  font-weight: 600;
+  font-size: 2vh;
+  padding: 0;
+  margin-left: 10.5em;
+  margin-top: 2em;
+}
+.contact form .btn:hover {
+  background-color: #402E7A;
+}
+.content {
+  background-image: url(../img/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #5C59A8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 12em 0 8em;
+  margin-right: 13em;
+}
+.content h2 {
+  font-size: 9vh;
+  color: #fff;
+} 
+.content p {
+  color: #fff;
+  text-align: center;
+  font-size: 4vh;
+}
+hr {
+  margin-bottom: 2em;
+  width: 5em;
+  border: #fff solid 0.2em;
+  border-radius: 1em;
+}
+.btn {
+  width: 10em;
+  background-color: #7895CB;
+  color: #fff;
+  font-weight: 600;
+  font-size: 2vh;
+  height: 3.5em;
+  font-family: "inter" , sans-serif;
+  border-radius: 2em;
+  border-style: none;
+  outline: none;
+}
+.btn:hover {
+  background-color: #402E7A;
+}
