@@ -5,36 +5,187 @@
     text-decoration: none;
     list-style-type: none;
 }
-.containerHeader{
-    background-color: #4A55A2;
+body{
+    font-family: "Inter", sans-serif;
 }
-/* header{ 
-    background-image: url('../images/loan.jpg');
+header{
+    background-image: url("../images/loanImages/dessin.png");
+    background-position: center;
     background-repeat: no-repeat;
-    background-position: center;
     background-size: cover;
-    opacity: 33%; 
-} */ header::before {
-    content: "";
-    /* position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0; */
-    background-image: url('your-background-image.jpg');
-    background-size: cover;
-    background-position: center;
-    opacity: 0.33; /* Apply opacity to the background */
-   /* z-index: 1;  Ensure it is behind the nav */
-  }
+    height: 400px;
+}
+    
+nav{
+display: flex;
+justify-content: space-between;
+padding: 2em 5em; 
+}
 
-
-nav ul{
+header ul {
     display: flex;
+    gap: 4em;
 }
-nav ul .items{
-    padding-top: 20px;
-}
-nav ul li a {
+/* #logo{
+    margin-bottom: 10px;
+} */
+header ul li a{
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    color: black;
+    font-size: 1.5em;
     color: white;
+}
+header ul li{
+    list-style-type: none;
+}   
+header > a{
+    padding-left: .9em;
+}
+
+.logsign button{
+    height: 3em;
+    width: 5em;
+    border-radius: 30em;
+    border: none;
+    outline: none;
+    font-family: "inter" , sans-serif;
+    font-weight: 400;
+}
+.logsign button:first-child{
+    width: 10em;
+    position: relative;
+    left: 5.1em;
+    padding-right: 5em;
+    background-color: #7895CB;
+    transition: ease .4s;
+    color: white;
+}
+.logsign button:first-child:hover{
+    background-color: #402E7A;
+}
+.logsign button:last-child{
+    background-color: white;
+    position: relative;
+    width: 6em;
+    color: #5C59A8;
+    transition: ease .4s;
+}
+.logsign button:last-child:hover{
+    background-color: #c0bfbf;
+}
+.textheader{
+    text-align: center;
+    font-weight: bolder;
+    color: white;
+    font-size: xx-large;
+    margin-top: 2em;
+}
+.sectionpret{
+    display: flex;
+    justify-content: center;
+}
+.zoneoffrepret{
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+}
+.icon{
+    width: 100px;
+}
+.offre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25vw;
+    height: 50vh;
+    background-color:#4a54a2b6 ;
+    padding-top:5rem ;
+    color: white;
+}
+h6{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+h3{
+    color: #402E7A;
+    font-family:"Manjari" , sans-serif ;
+    margin-bottom: 1rem;
+}
+.descripton{
+    line-height: 2rem;
+}
+.button{
+  background-color: #402E7A;
+   border-radius: 44px;
+   border: none;
+   padding: 10px 16px;
+   color: white; 
+   margin-top: 2rem;
+}
+.sectionformulairepret{
+    margin-top: 5rem;
+}
+.headerpret{
+    height: 16rem;
+    background-image: url("../images/loanImages/dessin.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #402E7A;
+    padding-top: 7rem;
+}
+.textPret{
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
+    color: white;
+    
+}
+.containerFormulaire{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    /* padding: 6rem 0rem; */
+}
+.backgroundFormulaire{
+    display: flex;
+    justify-content: center;  
+    width: 45rem;
+    height: 30rem;
+    background-color: #7895CB;
+    padding: 2rem 0rem;
+    
+}
+.imagecouteForm{
+    width: 20rem;
+    height: 30rem;
+    border-radius: 44px;
+}
+form{
+    width: 20rem;
+    height: 25rem;
+    background-image: url("../images/loanImages/image.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 90%;
+    border-radius: 44px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    line-height: 3rem;
+}
+input{
+    background-color: white;
+    border-radius: 44px;
+    border: none;
+    height: 2rem;
+    /* width: 17rem; */
+    /* padding: .1rem; */
+    
 }
