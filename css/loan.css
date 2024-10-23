@@ -126,7 +126,7 @@ h3{
    margin-top: 2rem;
 }
 .sectionformulairepret{
-    margin-top: 5rem;
+    margin-top: 3em;
 }
 .headerpret{
     height: 16rem;
@@ -145,7 +145,7 @@ h3{
     
 }
 .containerFormulaire{
-    margin-top: 5rem;
+    margin-top: 3rem;
     display: flex;
     justify-content: center;
     /* padding: 6rem 0rem; */
@@ -180,6 +180,7 @@ form{
     padding-right: 1rem;
     line-height: 3rem;
 }
+
 input{
     background-color: white;
     border-radius: 44px;
@@ -188,4 +189,7 @@ input{
     /* width: 17rem; */
     /* padding: .1rem; */
     
+}
+.sectionFormulairecontact{
+    margin-top: 5rem;
 }
