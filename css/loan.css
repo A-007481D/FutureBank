@@ -101,7 +101,7 @@ header > a{
     align-items: center;
     width: 25vw;
     height: 50vh;
-    background-color:#4a54a2b6 ;
+    background-color:#4a54a286 ;
     padding-top:5rem ;
     color: white;
 }
@@ -118,12 +118,16 @@ h3{
     line-height: 2rem;
 }
 .button{
-  background-color: #402E7A;
+  background-color: #7895CB;
    border-radius: 44px;
    border: none;
    padding: 10px 16px;
    color: white; 
    margin-top: 2rem;
+   cursor: pointer;
+}
+.button:hover{
+    background-color:#402E7A ;
 }
 .sectionformulairepret{
     margin-top: 3em;
@@ -187,8 +191,13 @@ input{
     border: none;
     height: 2rem;
     /* width: 17rem; */
-    /* padding: .1rem; */
-    
+  padding: 10px;  
+}
+textarea{
+    border: none;
+    border-radius: 44px;
+    height: 3rem;
+    padding: 10px;
 }
 .sectionFormulairecontact{
     margin-top: 5rem;
