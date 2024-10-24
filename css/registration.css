@@ -127,7 +127,7 @@ header > a{
   font-size: 2vh;
   padding: 0;
   margin-left: 10.5em;
-  margin-top: 2em;
+  margin-top: 0.5em;
 }
 .contact form .btn:hover {
   background-color: #402E7A;

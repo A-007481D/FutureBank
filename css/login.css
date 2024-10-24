@@ -111,14 +111,10 @@ header > a{
   border-style: none;
   outline: none;
 }
-.contact form textarea {
-  padding-left: 1.5em;
-  padding-top: 1.5em;
-  font-family: "inter" , sans-serif;
-  width: 20em;
-  height: 10em;
-  border-radius: 1em;
-  resize: none;
+.contact form div{
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 40px;
 }
 .contact form .btn {
   width: 10em;
@@ -127,11 +123,18 @@ header > a{
   font-weight: 600;
   font-size: 2vh;
   padding: 0;
-  margin-left: 8.5em;
-  margin-top: 2em;
+  margin-top: 0.5em;
 }
 .contact form .btn:hover {
   background-color: #402E7A;
+}
+.contact form a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  font-size: 1.5vh;
+  height: 6.5em;
 }
 .content {
   background-image: url(../img/bg.png);
