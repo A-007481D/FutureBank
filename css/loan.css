@@ -1,4 +1,4 @@
-/* Loan Page CSS */
+
 *{
     margin: 0;
     padding: 0;
@@ -8,31 +8,32 @@
 body{
     font-family: "Inter", sans-serif;
 }
-header{
-    background-image: url("../images/loanImages/dessin.png");
+.home{
+    background-image: url("../images/loanImages/Design.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 400px;
-}   
-nav{
-/* - */
-display: flex;
-justify-content: space-between;
-padding: 2em 5em; 
+    height: 400px; 
+}
+.logomobile{
+    display: none;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2em 5em;
 }
 header ul {
     display: flex;
-    gap: 4em;
-    margin-top: 1em;
+    gap: 4em;  
 }
 header ul li a{
     text-decoration: none;
     font-family: "Inter", sans-serif;
-    font-weight: 600;
-    color: black;
-    font-size: 1.5em;
+    font-weight: bold;
     color: white;
+    font-size: 1em;
 }
 header ul li{
     list-style-type: none;
@@ -40,16 +41,12 @@ header ul li{
 header > a{
     padding-left: .9em;
 }
-
 .logsign button{
     height: 3em;
-    width: 5em;
     border-radius: 30em;
     border: none;
-    outline: none;
     font-family: "inter" , sans-serif;
     font-weight: 400;
-    margin-top: 1em;
 }
 .logsign button:first-child{
     width: 10em;
@@ -73,12 +70,31 @@ header > a{
 .logsign button:last-child:hover{
     background-color: #c0bfbf;
 }
+/* Menu burger */
+.burger-menu {
+    display: block;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .burger-menu span {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px;
+    transition: 0.3s;
+  }
+  
+  /* Cacher le menu au départ sur les petits écrans */
+  #nav-links {
+    display: flex;
+  }
 .textheader{
     text-align: center;
     font-weight: bolder;
     color: white;
     font-size: xx-large;
-    margin-top: 2em;
+    padding-top: 10vh;
 }
 .sectionpret{
     display: flex;
@@ -87,7 +103,7 @@ header > a{
 .zoneoffrepret{
     margin-top: 3rem;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: auto auto auto;
     gap: 10px;
 }
 .icon{
@@ -98,10 +114,9 @@ header > a{
     flex-direction: column;
     align-items: center;
     width: 25vw;
-    height: 50vh;
-    background-color:#4a54a286 ;
+    background-color:#D9D9D9;
     padding-top:5rem ;
-    color: white;
+    color: black;
 }
 h6{
     margin-top: 1rem;
@@ -114,6 +129,7 @@ h3{
 }
 .descripton{
     line-height: 2rem;
+    font-size: .8rem;
 }
 .button{
   background-color: #7895CB;
@@ -123,47 +139,39 @@ h3{
    color: white; 
    margin-top: 2rem;
    cursor: pointer;
+   margin-bottom: 19px;
 }
 .button:hover{
     background-color:#402E7A ;
 }
 .sectionformulairepret{
-    margin-top: 3em;
+    margin-top: 1em;
 }
-.headerpret{
-    height: 16rem;
-    background-image: url("../images/loanImages/dessin.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: #402E7A;
-    padding-top: 7rem;
-}
+
 .textPret{
     text-align: center;
     font-size: xx-large;
     font-weight: bold;
-    color: white;
-    
+    color: black;   
 }
 .containerFormulaire{
     margin-top: 3rem;
     display: flex;
     justify-content: center;
-    /* padding: 6rem 0rem; */
 }
 .backgroundFormulaire{
     display: flex;
     justify-content: center;  
     width: 45rem;
     height: 30rem;
-    background-color: #7895CB;
-    padding: 2rem 0rem;   
+    background-color: #D9D9D9;
+    padding: 2rem 0rem;  
+    border-radius: 8px; 
 }
 .imagecouteForm{
     width: 20rem;
     height: 30rem;
-    /* border-radius: 44px; */
+    border-radius: 8px;
 }
 form{
     width: 20rem;
@@ -173,33 +181,30 @@ form{
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 90%;
-    /* border-radius: 44px; */
     display: flex;
     flex-direction: column;
     padding-top: 5rem;
     padding-left: 1rem;
     padding-right: 1rem;
     line-height: 3rem;
+    border-radius: 8px;
 }
-
 input{
     background-color: white;
-    border-radius: 44px;
+    border-radius: 16px;
     border: none;
     height: 2rem;
-    /* width: 17rem; */
-  padding: 10px;  
+    padding: 10px;  
 }
 textarea{
     border: none;
-    border-radius: 44px;
+    border-radius: 16px;
     height: 3rem;
     padding: 10px;
 }
 .sectionFormulairecontact{
-    margin-top: 5rem;
+    margin-top: 1rem;
 }
-
 footer{
     margin-top: 3rem;
     height: 30rem;
@@ -224,7 +229,6 @@ footer{
 .elementsFooter{
     line-height: 2em;
 }
-
 #socials{
     text-align: center;
 }
@@ -245,3 +249,186 @@ footer{
 .btefooter{
    position: absolute;
 }
+
+/* Sidenav menu */
+.sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: -250px;
+    background-color:#7895CB;
+    padding-top: 60px;
+    transition: left 0.5s ease;
+  }
+  
+  /* Sidenav menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color:white;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #111;
+  }
+  
+  .sidenav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Active class */
+  .sidenav.active {
+    left: 0;
+  }
+  
+  /* Close btn */
+  .sidenav .close {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+  }
+  
+  /* Icône burger */
+  .burger-icon span {
+    display: none;
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+  }
+  
+
+@media(min-width:1023px) and (max-width:1279px)
+{
+    .logsign button:first-child{
+        font-size: 10px;
+    }
+    .logsign button:last-child{
+        font-size: 10px;
+    }
+    header ul li a{
+        font-size: 1em;
+    }
+    .containerfooter{
+       gap:5rem
+    
+    }
+  
+}
+@media (min-width: 766px) and (max-width: 1023px) {
+
+   header a img {
+    display: none;
+   }
+   header ul li a{
+    font-size: .5em;
+}
+
+.logsign button:first-child{
+    font-size: 10px;
+}
+.logsign button:last-child{
+    font-size: 10px;
+}
+  
+.containerfooter{
+gap:2rem
+
+}
+  }
+
+@media(max-width: 767px){
+
+    footer{
+        display: none;
+    }
+    header{
+        display: none;
+    }
+   
+    .logomobile{
+        display: block;
+        padding: 2rem;
+    }
+    .icon{
+        width: 50px;
+    }
+    .zoneoffrepret{
+        margin-top: 3rem;
+        display: grid;
+        grid-template-columns: auto auto ;
+        grid-template-rows: auto;
+        gap: 10px;
+    }
+    .zoneoffrepret:last-child{
+      margin-left: auto;
+      margin-right: auto;
+    }
+    h6{
+        font-size: 10px;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    h3{
+        font-size: 10px;
+        color: #402E7A;
+        font-family:"Manjari" , sans-serif ;
+        margin-bottom: 1rem;
+    }
+    .descripton{
+        line-height: 2rem;
+        font-size: 1rem;
+    }
+    .home{  
+        height: 300px;
+    }
+    .textheader{
+        font-size: 20px;
+    }
+    .imagecouteForm{
+        display: none;
+    }
+    .backgroundFormulaire{
+        background-color: white;
+    }
+    .offre{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 48vw;
+        background-color:#D9D9D9;
+        padding-top:5rem ;
+        color: black;
+    }
+    .offre:nth-child(3)
+    {
+        grid-column: 1 / span 2; /* Prend toute la largeur des deux colonnes*/
+        justify-self: center; /* Centre l'élément horizontalement */
+    }
+    form{
+        width: 16rem;
+        height: 20rem;
+    }
+    input{
+        padding: 5px;
+    }
+
+    .elementmobile{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .burger-icon span{
+        display: block;
+    }
+}
+
+
