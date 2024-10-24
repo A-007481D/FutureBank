@@ -281,9 +281,127 @@ header > a{
 }
 
 
+/* loadsection */
+
+.loadcontainer{
+    display: flex;
+    padding-left: 6em;
+    background-color: #D9D9D9;
+    gap: 5em;
+    height: 35em;
+}
+.loadcontainer img{
+    height: 30em;
+    margin-top: 2em;
+}
+
+.loanpagetext{
+    padding-top: 3em;
+}
+.loadcontainer h2{
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 2em;
+}
+.loadcontainer p{
+    font-family: "Inter", sans-serif;
+    font-weight: 200;
+    font-size: 1.2em;
+}
 
 
 
+/* footer */
+
+footer{
+    margin-top: 12em;
+    height: 30rem;
+    background-color: #4A55A2;
+}
+.logo{
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+.containerfooter{
+    margin-top: 5rem;
+    display: flex;
+    gap :10rem;
+    justify-content: center;
+    color: white; 
+}
+.grandTitreFooter{
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: x-large;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+#Connact{
+    margin-bottom: 3.9em;
+}
+.elementsFooter{
+    font-family: "Inter", sans-serif;
+    font-weight: 200;
+    line-height: 2em;
+}
+
+#socials{
+    text-align: center;
+}
+.imagelink{
+    display: flex;
+    gap:10px
+}
+
+.imagelink img{
+    width: 40px;
+}
+.inputFooter{
+        background-color: white;
+        border-radius: 44px;
+        border: none;
+        height: 2rem;
+        padding: 10px;
+        outline: none;
+}
+.inputFooter{
+    width: 20em;
+}
+.btefooter{
+        background-color: #7895CB;
+         border-radius: 44px;
+         border: none;
+         padding: 10px 16px;
+         color: white; 
+         margin-top: 2rem;
+         cursor: pointer;
+        transition-duration: .4s;
+        position: relative;
+        right: 8em;
+}
+
+.button:hover{
+    background-color:#402E7A ;
+}
+
+.btefooter{
+    font-family: "Inter", sans-serif;
+    font-weight: 200;
+}
+
+.inputFooter::placeholder{
+    font-size: 15px;
+    font-family: "Inter", sans-serif;
+    font-weight: 200;
+}
+
+#copyright{
+    font-family: "Inter", sans-serif;
+    font-weight: 200;
+    text-align: center;
+    margin-top: 5.5em;
+    color: white;
+}
 
 
 
