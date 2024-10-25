@@ -7,23 +7,51 @@
     <link rel="stylesheet" href="/css/style.css">
     <!-- CSS FOR THIS PAGE -->
     <link rel="stylesheet" href="/css/login.css"> 
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <title>FutureBank | Login</title>
 </head>
 <body>
-    <header>
-        <a href=""><img src="../img/logo1.png" alt=""></a>
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="">Investment</a></li>
-            <li><a href="">Loaning</a></li>
-            <li><a href="../html/contact.html">Contact us</a></li>
-            <li><a href="">About us</a></li>
-        </ul>
-        <div class="logsign">
-            <button><a href="../html/login.html">Log In</a></button>
-            <button><a href="../html/registration.html">Sign Up</a></button>
+    <div class="header">
+        <header>
+            <a href=""><img class="logo1" src="../img/logo1.png" alt=""></a>
+            <a href=""><img class="logo2" src="../img/logo2.png" alt=""></a>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../html/projects.html">Investment</a></li>
+                <li><a href="../html/loan.html">Loaning</a></li>
+                <li><a href="../html/contact.html">Contact us</a></li>
+                <li><a href="../html/about.html">About us</a></li>
+            </ul>
+            
+            <div class="logsign">
+                <button><a href="../html/login.html">Log In</a></button>
+                <button><a href="../html/registration.html">Sign Up</a></button>
+            </div>
+        </header>
+        <div class="elementmobile">
+            <img class="logomobile" src="../images/loanImages/logomobile.png" alt="">
+            <div id="mySidenav" class="sidenav">
+                <a id="closeBtn" href="#" class="close">×</a>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../html/projects.html">Investment</a></li>
+                    <li><a href="../html/loan.html">Loaning</a></li>
+                    <li><a href="../html/contact.html">Contact us</a></li>
+                    <li><a href="../html/about.html">About us</a></li>
+                    <li><a href="../html/login.html">Log in</a></li>
+                    <li><a href="../html/registration.html">Sing Up</a></li>
+                </ul>
+                </ul>
+            </div>
         </div>
-    </header>
+        <a href="#" id="openBtn">
+          <span class="burger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </a>
+    </div>
     <div class="body">
         <div class="contact">
             <form>
@@ -44,5 +72,23 @@
             <a href="../html/registration.html"><button class="btn">Sign Up</button></a>
         </div>
     </div>
+    <script>
+        var sidenav = document.getElementById("mySidenav");
+        var openBtn = document.getElementById("openBtn");
+        var closeBtn = document.getElementById("closeBtn");
+    
+        openBtn.onclick = openNav;
+        closeBtn.onclick = closeNav;
+    
+   
+        function openNav() {
+            sidenav.classList.add("active");
+        }
+    
+        function closeNav() {
+            sidenav.classList.remove("active");
+        }
+
+    </script>
 </body>
 </html>
