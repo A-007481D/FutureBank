@@ -440,9 +440,17 @@ header{
         padding: 5px;
     }
     footer{
-        display: none;
+        padding: 10px;
+        height: 60rem;
     }
-
+    .containerfooter{
+        display: flex;
+        flex-direction: column;
+        gap:10px;
+    }
+    .inputFooter{
+        width: 40vw;
+    }
 }
 
 
