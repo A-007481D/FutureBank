@@ -1,15 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS UNIVERSAL -->
-    <link rel="stylesheet" href="/css/style.css">
-    <!-- CSS FOR THIS PAGE -->
-    <link rel="stylesheet" href="/css/loan.css">
-    <title>FutureBank | Loans</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manjari:wght@100;400;700&family=Sansita+Swashed:wght@300..900&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manjari:wght@100;400;700&family=Sansita+Swashed:wght@300..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../css/loan.css">
+  <title>FutureBank | Loans</title>
+  
 </head>
+
 <body>
+  <div class="home">
+    <div class="elementmobile">
+    <img class="logomobile" src="../images/loanImages/logomobile.png" alt="">
+    <div id="mySidenav" class="sidenav">
+      <a id="closeBtn" href="#" class="close">×</a>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+                    <li><a href="../html/projects.html">Investment</a></li>
+                    <li><a href="../html/loan.html">Loaning</a></li>
+                    <li><a href="../html/contact.html">Contact us</a></li>
+                    <li><a href="../html/about.html">About us</a></li>
+                    <li><a href="../html/login.html">Log in</a></li>
+                    <li><a href="../html/registration.html">Sing Up</a></li>
+      </ul>
+    </div>
     
+    <a href="#" id="openBtn">
+      <span class="burger-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+    </a>
+
+</div>
+
+    <header>
+      <a id="logo" href=""><img src="../images/loanImages/logo.png" alt=""></a>
+     
+      <ul id="nav-links">
+        <li><a href="../index.html">Home</a></li>
+                <li><a href="../html/projects.html">Investment</a></li>
+                <li><a href="../html/loan.html">Loaning</a></li>
+                <li><a href="../html/contact.html">Contact us</a></li>
+                <li><a href="../html/about.html">About us</a></li>
+      </ul>
+      <div class="logsign">
+        <button><a href="../html/login.html">Log In</a></button>
+        <button><a href="../html/registration.html">Sign Up</a></button>
+      </div>
+    </header>
+    <div class="textheader">
+      <p>Simulate your loan in just a few clicks</p>
+    </div>
+  </div>
+  <section class="sectionpret">
+    <div class="zoneoffrepret">
+      <div class="offre">
+        <img src="../images/loanImages/busnissicon.png" alt="" class="icon">
+        <h6>car Loan</h6>
+        <h3>$1300-$10000</h3>
+        <p class="descripton">
+          Borrow-$350 over 3 months<br>
+
+          Interest rate -292% pa fixed<br>
+
+          Total amount payable-$525.12<br>
+
+          Representative -1,286% APR<br>
+        </p>
+        <button class="button">Apply Now</button>
+      </div>
+
+      <div class="offre">
+        <img src="../images/loanImages/homeicon.png" alt="" class="icon">
+        <h6>Home Loan</h6>
+        <h3>$1300-$10000</h3>
+        <p class="descripton">
+          Borrow-$350 over 3 months<br>
+
+          Interest rate -292% pa fixed<br>
+
+          Total amount payable-$525.12<br>
+
+          Representative -1,286% APR<br>
+        </p>
+        <button class="button">Apply Now</button>
+      </div>
+
+      <div class="offre">
+        <img src="../images/loanImages/caricon.png" alt="" class="icon">
+        <h6>Busnisse Loan</h6>
+        <h3>$1300-$10000</h3>
+        <p class="descripton">
+          Borrow-$350 over 3 months<br>
+
+          Interest rate -292% pa fixed<br>
+
+          Total amount payable-$525.12<br>
+
+          Representative -1,286% APR<br>
+        </p>
+        <button class="button">Apply Now</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="sectionformulairepret">
+    <div class="headerpret">
+      <div class="textPret">
+        <p>Take your first loan today!</p>
+      </div>
+    </div>
+    <div class="containerFormulaire">
+      <div class="backgroundFormulaire">
+
+        <form action="">
+          <label for="">Loan amount ($):</label>
+          <input type="number" placeholder="1000$">
+          <label for="">Loan duration(months) $:</label>
+          <input type="number" placeholder="5 months">
+          <label for="">Interest rate (%):</label>
+          <input type="number" placeholder="5%">
+          <button class="button">Calculate</button>
+        </form>
+        <img src="../images/loanImages/pret.jpg" alt="" class="imagecouteForm">
+      </div>
+    </div>
+  </section>
+
+  <section class="sectionFormulairecontact">
+    <div class="headerpret">
+      <div class="textPret">
+        <p>Contact advisor</p>
+      </div>
+    </div>
+    <div class="containerFormulaire">
+      <div class="backgroundFormulaire">
+        <img src="../images/loanImages/advisor.jpg" alt="" class="imagecouteForm">
+        <form action="">
+          <label for="">Your Name:</label>
+          <input type="text" placeholder="Your name">
+          <label for="">Your Email:</label>
+          <input type="email" placeholder="your mail">
+          <label for="">message </label>
+          <textarea placeholder="Message"></textarea>
+          <button class="button">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <img src="../images/loanImages/logo.png" alt="" class="logo">
+    <div class="containerfooter">
+      <div class="celulle">
+        <p class="grandTitreFooter">
+          Contact Info
+        </p>
+        <p class="elementsFooter">
+          (452) 251-8852<br>
+          info@FutureBank.com<br>
+          Grove Street 13th<br>
+          San Andreas Usa<br>
+        </p>
+      </div>
+
+      <div class="celulle">
+        <p class="grandTitreFooter">
+          Quick Links
+        </p>
+        <p class="elementsFooter">
+          Home<br>
+          Investment<br>
+          About us<br>
+          Contact Us<br>
+        </p>
+      </div>
+
+      <div class="celulle">
+        <p class="grandTitreFooter">
+          Connect
+        </p>
+        <div class="imagelink">
+          <img src="../images/loanImages/fb.png" alt="">
+          <img src="../images/loanImages/x.png" alt="">
+          <img src="../images/loanImages/insta.png" alt="">
+          <img src="../images/loanImages/link.png" alt="">
+        </div>
+      </div>
+
+      <div class="celulle">
+        <p class="grandTitreFooter">
+          Contact Info
+        </p>
+        <p class="elementsFooter">
+          Subscribe to our <br>newsletter!
+        </p>
+        <input class="inputFooter" type="email" placeholder="exemple@mail.com ">
+        <button class="button btefooter">subscribe</button>
+      </div>
+      <div id="#copyright"></div>
+    </div>
+  </footer>
+  <script>
+    var sidenav = document.getElementById("mySidenav");
+var openBtn = document.getElementById("openBtn");
+var closeBtn = document.getElementById("closeBtn");
+
+openBtn.onclick = openNav;
+closeBtn.onclick = closeNav;
+
+/* Set the width of the side navigation to 250px */
+function openNav() {
+  sidenav.classList.add("active");
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+  sidenav.classList.remove("active");
+}
+
+    </script>
 </body>
+
 </html>

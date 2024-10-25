@@ -1,1 +1,478 @@
 /* Contact Page CSS */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,600;1,14..32,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari&display=swap');
+/* header */
+body{
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+.header {
+  display: flex;
+  padding: 1em 2em;
+  background-color: #4A55A2;
+  justify-content: space-between;
+}
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header ul {
+  display: flex;
+  gap: 4em;
+}
+header ul li a{
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  /* color: black; */
+  font-size: 1.5em;
+  color: white;
+}
+header a .logo2{
+  display: none;
+}
+header ul li{
+  list-style-type: none;
+}   
+header > a{
+  padding-left: .9em;
+}
+
+.logsign button{
+  height: 3em;
+  width: 5em;
+  border-radius: 30em;
+  border: none;
+  outline: none;
+  font-family: "inter" , sans-serif;
+  font-weight: 400;
+}
+.logsign button:first-child{
+  width: 10em;
+  position: relative;
+  left: 5.1em;
+  padding-right: 5em;
+  background-color: #7895CB;
+  transition: ease .4s;
+  color: white;
+}
+.logsign button:first-child:hover{
+  background-color: #402E7A;
+}
+.logsign button:last-child{
+  background-color: white;
+  position: relative;
+  width: 6em;
+  color: #5C59A8;
+  transition: ease .4s;
+}
+.logsign button a{
+  text-decoration: none;
+  color:white ;
+}
+
+.logsign button:last-child a{
+  color: #5C59A8;
+}
+.logsign button:last-child:hover{
+  background-color: #c0bfbf;
+}
+.body{
+  display: flex;
+  flex-direction: row-reverse;
+}
+.contact {
+  display: flex;
+  justify-content: right;
+  margin-top: 2em;
+  margin-right: 10.375em;
+  margin-bottom: 2em;
+}
+.contact h2{
+  color: #fff;
+  font-size: 6vh;
+  text-align: center;
+}
+.contact form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 21.375em;
+  height: 35.75em;
+  background-color: #4A55A2;
+  border-radius: 2em;
+}
+.contact form input{
+  padding-left: 1.5em;
+  margin-bottom: 2em;
+  width: 20.81em;
+  height: 3.5em;
+  font-family: "inter" , sans-serif;
+  border-radius: 2em;
+  border-style: none;
+  outline: none;
+}
+.contact form textarea {
+  padding-left: 1.5em;
+  padding-top: 1.5em;
+  font-family: "inter" , sans-serif;
+  width: 20em;
+  height: 10em;
+  border-radius: 1em;
+  resize: none;
+}
+.contact form .btn {
+  width: 10em;
+  background-color: #7895CB;
+  color: #fff;
+  font-weight: 600;
+  font-size: 2vh;
+  padding: 0;
+  margin-left: 10.5em;
+  margin-top: 2em;
+}
+.contact form .btn:hover {
+  background-color: #402E7A;
+}
+.content {
+  background-image: url(../img/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #5C59A8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 12em 0 8em;
+  margin-right: 13em;
+}
+.content h2 {
+  font-size: 9vh;
+  color: #fff;
+} 
+.content p {
+  color: #fff;
+  text-align: center;
+  font-size: 4vh;
+}
+hr {
+  margin-bottom: 2em;
+  width: 5em;
+  border: #fff solid 0.2em;
+  border-radius: 1em;
+}
+/* footer */
+
+footer{
+    /* margin-top: 12em; */
+    height: 30rem;
+    background-color: #4A55A2;
+    height: 500px;
+}
+.logo{
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+
+#mobilelogo{
+  display: none;
+}
+.containerfooter{
+  margin-top: 5rem;
+  display: flex;
+  gap :10rem;
+  justify-content: center;
+  color: white; 
+}
+.grandTitreFooter{
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: x-large;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+#Connact{
+  margin-bottom: 3.9em;
+}
+.elementsFooter{
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
+  line-height: 2em;
+}
+
+#socials{
+  text-align: center;
+}
+.imagelink{
+  display: flex;
+  gap:10px
+}
+
+.imagelink img{
+  width: 40px;
+}
+.inputFooter{
+      background-color: white;
+      border-radius: 44px;
+      border: none;
+      height: 2rem;
+      padding: 10px;
+      outline: none;
+}
+.inputFooter{
+  width: 20em;
+}
+.btefooter{
+      background-color: #7895CB;
+       border-radius: 44px;
+       border: none;
+       padding: 10px 16px;
+       color: white; 
+       margin-top: 2rem;
+       cursor: pointer;
+      transition-duration: .4s;
+      position: relative;
+      right: 8em;
+}
+
+.button:hover{
+  background-color:#402E7A ;
+}
+
+.btefooter{
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
+}
+
+.inputFooter::placeholder{
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
+}
+
+#copyright{
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
+  text-align: center;
+  margin-top: 4.5em;
+  color: white;
+}
+.logomobile{
+  display: none;
+}
+/* Sidenav menu */
+ .sidenav {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: -250px; 
+  background-color:#7895CB;
+  padding-top: 60px;
+  transition: right 0.5s ease;
+}
+
+/* Sidenav menu links */
+ .sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color:white;
+  display: block;
+  transition: 0.3s;
+}
+
+ .sidenav a:hover {
+  color: #111;
+}
+
+ .sidenav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* / Active class / */
+ .sidenav.active {
+  right: 0;
+}
+
+/* / Close btn / */
+ .sidenav .close {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+/* Icône burger */
+.burger-icon span {
+  display: none;
+  justify-content: center;
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+}
+@media(max-width:1280px){
+  header ul {
+    display: flex;
+    gap: 3em; 
+  }
+  header ul li a{
+    color: white;
+  }
+  header{
+    justify-content: left;
+    padding: 0.5em 0em;
+  }
+  .contact {
+    margin-top: 4.2em;
+    margin-right: 9.5em;
+    margin-bottom: 4.5em;
+  }
+  .content {
+    padding: 0 8em 0 8em;
+    margin-right: 9.5em;
+  }
+  .content h2 {
+    font-size: 6vh;
+  } 
+
+}
+@media (max-width:1280px) and (min-width:1024px){
+  header ul {
+    display: flex;
+    gap: 2.2em; 
+  }
+  header ul li a{
+    font-weight: 600;
+    font-size: 1em;
+    color: white;
+  }
+  header{
+    justify-content: left;
+    padding: 0.5em 0em;
+  }
+  .contact {
+    margin-top: 4.4em;
+    margin-right: 5em;
+    margin-bottom: 4.3em;
+  }
+  .content {
+    padding: 0 8em 0 8em;
+    margin-right: 5.5em;
+  }
+  .content h2 {
+    font-size: 6vh;
+  } 
+}
+@media (max-width:1024px) and (min-width:768px){
+  .header {
+    padding: 0em 1em;
+  }
+  header{
+    background-size: cover;
+    justify-content: left;
+    /* padding: 0em; */
+  }
+  header ul {
+    display: flex;
+    gap: 2em; 
+  }
+  header ul li a{
+    display: none;
+  }
+  header{
+    justify-content: left;
+    padding: 0.5em 0em;
+  }
+  .logsign{
+    display: none;
+  }
+  .contact {
+    margin-top: 1.3em;
+    margin-right: 1.3em;
+    margin-bottom: 4.4em;
+  }
+  .content {
+    padding: 0 4em 0 4em;
+    margin-right: 1.4em;
+  }
+  .content h2 {
+    font-size: 6vh;
+  } 
+  .elementmobile{
+    display: flex;
+    margin-top: 12px;
+  }
+  #openBtn {
+    padding-top: 1em;
+    padding-right: 1em;
+  }
+  .burger-icon span{
+    display: block;
+  }
+  footer {
+    display: none;
+  }
+}
+@media(max-width:767px){
+  .header {
+    padding: 0em 1em;
+  }
+  header{
+    background-size: cover;
+    justify-content: left;
+    /* padding: 0px; */
+  }
+  header ul {
+    display: none;
+  }
+  header a .logo2{
+    display: inline;
+  }
+  header a .logo1{
+    display: none;
+  }
+  .logsign{
+    display: none;
+  }
+  .content {
+    display: none;
+  }
+  .contact {
+    margin-top: 8em;
+    margin-right: 2.5em;
+    margin-bottom: 1em;
+  }
+  .contact form div{
+    gap: 20px;
+  }
+  .contact form .btn {
+    width: 8em;
+    height: 3em;
+    margin-top: 1.5em;
+    margin-left: 7.5em;
+  }
+  .contact form a{
+    height: 6em;
+  }
+  .elementmobile{
+    display: flex;
+    margin-top: 12px;
+    /* align-items: center; */
+  }
+  #openBtn {
+    padding-top: 1em;
+    padding-right: 1em;
+  }
+  .burger-icon span{
+    display: block;
+  }
+  footer {
+    display: none;
+  }
+}

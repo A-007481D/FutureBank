@@ -4,12 +4,143 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS UNIVERSAL -->
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <!-- CSS FOR THIS PAGE -->
-    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="../css/contact.css">
     <title>FutureBank | Contact</title>
 </head>
 <body>
+    <div class="header">
+        <header>
+            <a href=""><img class="logo1" src="../img/logo1.png" alt=""></a>
+            <a href=""><img class="logo2" src="../img/logo2.png" alt=""></a>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../html/projects.html">Investment</a></li>
+                <li><a href="../html/loan.html">Loaning</a></li>
+                <li><a href="../html/contact.html">Contact us</a></li>
+                <li><a href="../html/about.html">About us</a></li>
+            </ul>
+            
+            <div class="logsign">
+                <button><a href="../html/login.html">Log In</a></button>
+                <button><a href="../html/registration.html">Sign Up</a></button>
+            </div>
+            
+        </header>
+        <div class="elementmobile">
+            <div id="mySidenav" class="sidenav">
+                <a id="closeBtn" href="#" class="close">×</a>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../html/projects.html">Investment</a></li>
+                    <li><a href="../html/loan.html">Loaning</a></li>
+                    <li><a href="../html/contact.html">Contact us</a></li>
+                    <li><a href="../html/about.html">About us</a></li>
+                    <li><a href="../html/login.html">Log in</a></li>
+                    <li><a href="../html/registration.html">Sing Up</a></li>
+                </ul>
+                </ul>
+            </div>
+        </div>
+        <a href="#" id="openBtn">
+          <span class="burger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </a>      
+    </div>
+    <div class="body">
+        <div class="contact">
+            <form>
+                <h2>Contact Us</h2>
+                <input type="email" placeholder="Email" required>
+                <input type="text" placeholder="Name" required>
+                <textarea placeholder="Message"></textarea>
+                <input type="button" class="btn" value="Send">
+            </form>
+        </div>
+        <div class="content">
+            <h2>Contact Us</h2>
+            <hr>
+            <p>Have Any Questions or Need Assistance?<br>
+            We’re here to help! Whether you have inquiries about our services, need support, or want to learn more about investment opportunities, don’t hesitate to reach out. Our team will get back to you as soon as possible
+            </p>
+        </div>
+    </div>
+    <!-- footer -->
+
+    <footer>
+        <img src="../images/loanImages/logo.png" alt="" class="logo">
+         <div class="containerfooter">
+           <div class="celulle">
+             <p class="grandTitreFooter">
+               Contact Info
+             </p>
+             <p class="elementsFooter">
+               (452) 251-8852<br>
+               info@FutureBank.com<br>
+               Grove Street 13th<br>
+               San Andreas Usa<br>
+             </p>
+           </div>
+
+           <div class="celulle">
+             <p class="grandTitreFooter">
+               Quick Links
+             </p>
+             <p class="elementsFooter">
+               Home<br>
+               Investment<br>
+               About us<br>
+              Contact Us<br>
+             </p>
+           </div>
+
+           <div class="celulle">
+             <p id="Connact" class="grandTitreFooter">
+              Connect
+             </p>
+
+             <div class="imagelink">
+               <img src="../HomeImg/linkedin.png" alt="linkedin">
+               <img src="../HomeImg/x.png" alt="linkedin">
+               <img src="../HomeImg/instagram.png" alt="linkedin">
+               <img src="../HomeImg/facebook.png" alt="linkedin">
+             </div>
+           </div>
+
+           <div class="celulle">
+             <p class="grandTitreFooter">
+               Contact Info
+             </p>
+             <p class="elementsFooter">
+               Subscribe to ournewsletter!
+             </p>
+             <input class="inputFooter" type="email" placeholder="exemple@mail.com">
+             <button class="button btefooter">subscribe</button>
+           </div>
+        </div>
+        <p id="copyright">© 2024 Codebenders. All rights reserved | FutureBank</p>
+    </footer>
+    <script>
+        var sidenav = document.getElementById("mySidenav");
+        var openBtn = document.getElementById("openBtn");
+        var closeBtn = document.getElementById("closeBtn");
     
+        openBtn.onclick = openNav;
+        closeBtn.onclick = closeNav;
+    
+   
+        function openNav() {
+            sidenav.classList.add("active");
+        }
+    
+        function closeNav() {
+            sidenav.classList.remove("active");
+        }
+
+    </script>
 </body>
 </html>

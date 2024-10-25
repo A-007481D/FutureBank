@@ -1,1 +1,764 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,600;1,14..32,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari&display=swap');
+
+
 /* Home Page CSS */
+
+
+/* header */
+body{
+    margin: 0;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    padding: 2em 5em;
+}
+header ul {
+    display: flex;
+    gap: 4em;
+}
+header ul li a{
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    color: black;
+    font-size: 1.5em;
+    color: white;
+}
+header ul li{
+    list-style-type: none;
+}   
+header > a{
+    padding-left: .9em;
+}
+
+.logsign button{
+    height: 3em;
+    width: 5em;
+    border-radius: 30em;
+    border: none;
+    outline: none;
+    font-family: "inter" , sans-serif;
+    font-weight: 400;
+}
+
+.logsign button a{
+    text-decoration: none;
+    color:white ;
+}
+
+.logsign button:last-child a{
+    color: #5C59A8;
+}
+
+.logsign button:first-child{
+    width: 10em;
+    position: relative;
+    left: 5.1em;
+    padding-right: 5em;
+    background-color: #7895CB;
+    transition: ease .4s;
+    color: white;
+    cursor: pointer;
+}
+.logsign button:first-child:hover{
+    background-color: #402E7A;
+}
+.logsign button:last-child{
+    background-color: white;
+    position: relative;
+    width: 6em;
+    color: #5C59A8;
+    transition: ease .4s;
+    cursor: pointer;
+}
+.logsign button:last-child:hover{
+    background-color: #c0bfbf;
+}
+
+#menuToggle {
+   
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  #menuToggle a
+  {
+    text-decoration: none;
+    color: #232323;
+    
+    transition: color 0.3s ease;
+  }
+  
+  
+  #menuToggle span:first-child {
+    transform-origin: 0% 0%;
+  }
+  
+  #menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+  }
+  
+  #menuToggle input {
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    width: 40px;
+  
+    z-index: 2; 
+    -webkit-touch-callout: none;
+  }
+  
+  #menuToggle span {
+    display: block; 
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px; 
+    position: relative; 
+    background: #cdcdcd;
+    border-radius: 3px;
+    z-index: 1; 
+    transition: 
+      background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+    transform-origin: 4px 0px;
+  }
+  
+  #menuToggle input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
+  }
+  
+  #menuToggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+  
+  #menuToggle input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+  }
+  #menu {
+    position: absolute;
+    left: -300px;
+    top: 80px;
+    width: 200px;
+    margin: -100px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+    background: pink;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+  
+    transition: left 0.5s;
+    
+  }
+  
+  #menu li {
+    padding: 10px 0;
+    font-size: 22px;
+  }
+  #menuToggle input:checked ~ ul {
+    left: 40px;
+  }
+  
+
+
+/* HomeSection */
+
+.First-Home-elements{
+    margin: 8em;
+}
+.First-Home-elements > h2 {
+    font-family: "Anek Devanagari", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 60px;
+    color: white;
+}
+
+.Home-inputs button{
+    width: 14em;
+    height: 5em;
+    border-radius: 1.1em;
+    margin-right: 2em;
+    border: none;
+    outline: none;
+    background-color: #7896cc;
+    color: white;
+    transition: ease .4s;
+}
+.Home-inputs button:hover{
+    background-color:#402E7A ;
+}
+.Home-inputs :last-child{
+    text-decoration: none;
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 1.6em;
+    cursor: pointer;
+}
+.Home-inputs button p {
+    position: relative;
+    bottom : .1em;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+}
+.Home-inputs :last-child img{
+    position: relative;
+    left: .2em;
+    top: .1em;
+}
+.back{
+    background-image: url(/HomeImg/background2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+
+
+
+/* ourservices */
+
+
+
+
+.ourservices > h2{
+    text-align: center;
+    margin: 3em 0;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 2.5em;
+}
+
+.box{
+    display: flex;
+    gap: 2em;
+}
+.box :last-child h2{
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+}
+.box :last-child p{
+    font-family: "Inter", sans-serif;
+    font-weight: 200;
+}
+
+.box img{
+    height: 9em;
+    width: auto;
+}
+
+.box-container{
+    margin: 0 0 0 16em;
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 8em;
+}
+
+
+/* investment Styles */
+
+
+
+.investment-section > h2{
+    text-align: center;
+    margin: 3em 0;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 2.5em;
+}
+.inv-container{
+    display: grid;
+    grid-template-columns:  auto auto;
+    justify-content: center;
+    gap: 6em;
+}
+.inv-container img{
+    height: 22em;
+}
+.inv{
+    height: 22em;
+    background-color: #D9D9D9;
+    width: 35em;
+    display: flex;
+    gap: 2em;
+    border-radius: .9em;
+}
+.inv span h2{
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 2em;
+}
+.inv span p {
+    font-family: "Inter", sans-serif;
+    font-weight: 25;
+}
+
+#hometext{
+    font-family: "Anek Devanagari", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 60px;
+    color: white;
+    display: none;
+}
+
+#LearnMore1{
+    font-family: "Inter", sans-serif;
+    font-weight: 25;
+    position: relative;
+    left: 12em;
+    top: 3.4em;
+    color: black;
+    text-decoration: none;
+}
+#LearnMore1:hover{
+    text-decoration:underline;
+}
+#LearnMore2{
+    font-family: "Inter", sans-serif;
+    font-weight: 25;
+    position: relative;
+    left: 12em;
+    top: 5.7em;
+    color: black;
+    text-decoration: none;
+}
+#LearnMore2:hover{
+    text-decoration:underline;
+}
+
+.investment-section input{
+    margin: 4em 41em;
+    width: 12em;
+    height: 3em;
+    border-radius: .9em;
+    border: none;
+    background-color: #7895CB;
+    color: white;
+    cursor: pointer;
+    transition-duration: .4s;
+}
+.investment-section input[value]{
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 1em;
+}
+.investment-section input:hover{
+    background-color: #402E7A;
+}
+
+
+/* WhychooseFutureBank */
+
+.Chcontainer{
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    margin-left: 2em;
+}
+
+.ChooseFutureBank h2{
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 2em;
+    text-align: center;
+}
+.Chcontainer img{
+    margin: 0 0 6em 6em;
+}
+
+
+/* loadsection */
+
+.loadcontainer{
+    display: flex;
+    padding-left: 6em;
+    background-color: #D9D9D9;
+    gap: 5em;
+    height: 35em;
+}
+.loadcontainer img{
+    height: 30em;
+    margin-top: 2em;
+}
+
+.loanpagetext{
+    padding-top: 3em;
+}
+.loadcontainer h2{
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 2em;
+}
+.loadcontainer p{
+    font-family: "Inter", sans-serif;
+    font-weight: 200;
+    font-size: 1.2em;
+}
+
+
+
+/* footer */
+
+footer{
+    margin-top: 12em;
+    height: 30rem;
+    background-color: #4A55A2;
+}
+/* .logo{
+    margin-left: 2rem;
+    margin-top: 2rem;
+} */
+
+#mobilelogo{
+    display: none;
+}
+.containerfooter{
+    margin-top: 5rem;
+    display: flex;
+    gap :10rem;
+    justify-content: center;
+    color: white; 
+}
+.grandTitreFooter{
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: x-large;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+#Connact{
+    margin-bottom: 3.9em;
+}
+.elementsFooter{
+    font-family: "Inter", sans-serif;
+    font-weight: 200;
+    line-height: 2em;
+}
+
+#socials{
+    text-align: center;
+}
+.imagelink{
+    display: flex;
+    gap:10px
+}
+
+.imagelink img{
+    width: 40px;
+}
+.inputFooter{
+        background-color: white;
+        border-radius: 44px;
+        border: none;
+        height: 2rem;
+        padding: 10px;
+        outline: none;
+}
+.inputFooter{
+    width: 20em;
+}
+.btefooter{
+        background-color: #7895CB;
+         border-radius: 44px;
+         border: none;
+         padding: 10px 16px;
+         color: white; 
+         margin-top: 2rem;
+         cursor: pointer;
+        transition-duration: .4s;
+        position: relative;
+        right: 8em;
+}
+
+.button:hover{
+    background-color:#402E7A ;
+}
+
+.btefooter{
+    font-family: "Inter", sans-serif;
+    font-weight: 200;
+}
+
+.inputFooter::placeholder{
+    font-size: 15px;
+    font-family: "Inter", sans-serif;
+    font-weight: 200;
+}
+
+#copyright{
+    font-family: "Inter", sans-serif;
+    font-weight: 200;
+    text-align: center;
+    margin-top: 5.5em;
+    color: white;
+}
+
+
+/* burgernav */
+
+.logomobile{
+    display: none;
+}
+
+.sidenav {
+    height: 100%;
+    width: 650px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: -50%;
+    background-color:#7895CB;
+    padding-top: 60px;
+    transition: right 0.5s ease;
+  }
+
+ 
+  .sidenav a {
+    font-family: "Inter", sans-serif;
+    font-weight: 200;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 100px;
+    color:white;
+    display: block;
+    transition: 0.3s;
+    margin-bottom: 1.01em;
+  }
+
+  .sidenav a:hover {
+    color: #111;
+  }
+
+  .sidenav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* Active class */
+  .sidenav.active {
+    right: 0;
+  }
+
+  /* Close btn */
+  .sidenav .close {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 100px;
+  }
+
+  /* Icône burger */
+  .burger-icon span {
+    display: none;
+    width: 80px;
+    height: 15px;
+    background-color: white;
+    margin: 6px 0;
+  }
+ 
+
+
+
+
+
+
+
+     /* mobile : 767 */
+
+@media (max-width: 768px) {
+    
+    .back{
+        width: 400%;
+        height: 190rem;
+    }
+
+    #mobilelogo{
+        display: inline;
+        width: 30em;
+        margin-top: 2em;
+    }
+    
+    header > a img{
+        display: none;
+    }
+    header ul li a{
+        display: none;
+    }
+    .logsign{
+        display: none;
+    }
+    .First-Home-elements > h2{
+        display: none;
+    }
+    #hometext{
+        display: inline;
+        font-size: 15rem;
+    }
+    .Home-inputs button{
+        width: 45rem;
+        height: 11rem;
+        margin-top: 6em;
+        font-size: 30px;
+    }
+    .Home-inputs:last-child {
+        font-size: 30px;
+    }
+    .Home-inputs:last-child img{
+        width: 45px;
+    }
+    .elementmobile{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 30em;
+    }
+    
+
+    .burger-icon span{
+        display: block;
+    }
+
+    .ourservices > h2{
+        font-size: 90px;
+        text-align: center;
+        margin: 1.2em 0;
+        margin-left: 15em;
+        display: flex;
+    }
+
+    .box-container {
+        display: grid;
+        grid-template-columns: auto;
+        margin-left: 40em;
+    }
+    .box img{
+        width: 30em;
+        height: auto;
+    }
+    
+    
+
+
+}
+
+
+
+@media (max-width : 320px){
+
+    .elementmobile{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 20em;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+@media (max-width: 600px) {
+    .back {
+        width: 250%;
+    }
+    
+    .box-container{
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .box img{
+        padding: ;
+        width: 12em;
+        height: 12em;
+    }
+    .ourservices > h2{
+        padding-left: 10em;
+        font-weight: 800;
+        
+    }
+    .box span h2{
+        font-size: xxx-large;
+    }
+    .box span p{
+        font-size: xx-large;
+    }
+
+} */
+
+/* @media (max-width: 768px) { 
+    header {
+        background-color: #fff; 
+        box-shadow: none; 
+    }
+
+    .navbar {
+        display: none; 
+    }
+
+    .navbar.open {
+        display: block; 
+        position: absolute; 
+        top: 60px; 
+        left: 0;
+        width: 100%;
+        background-color: #fff; 
+    }
+
+    #menu-icon {
+        font-size: 30px; 
+        cursor: pointer; 
+    }
+
+    header.sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000; 
+    }
+} */
