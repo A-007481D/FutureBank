@@ -37,7 +37,7 @@ FutureBank is a simulated online banking application developed as a team project
 
 1. Navigate to the `index.html` file to start on the homepage.
 2. Use the navigation links to explore different sections like Projects, About Us, Partnerships, and Contact.
-3. For development, please refer to `css/responsive.css` to adjust layouts for different screen sizes.
+3. For development, please refer to `css` to adjust layouts for different screen sizes.
 4. Authentication pages (Login and Register) are provided for demonstration purposes; they require server-side functionality for full implementation.
 
 
