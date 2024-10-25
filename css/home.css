@@ -13,7 +13,6 @@ body{
 header{
     display: flex;
     align-items: center;
-    justify-content: space-between;
     padding: 2em 5em;
 }
 header ul {
@@ -78,6 +77,92 @@ header > a{
 .logsign button:last-child:hover{
     background-color: #c0bfbf;
 }
+
+#menuToggle {
+   
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  #menuToggle a
+  {
+    text-decoration: none;
+    color: #232323;
+    
+    transition: color 0.3s ease;
+  }
+  
+  
+  #menuToggle span:first-child {
+    transform-origin: 0% 0%;
+  }
+  
+  #menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+  }
+  
+  #menuToggle input {
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    width: 40px;
+  
+    z-index: 2; /* in order to place the checkbox over the hamburguer */
+    -webkit-touch-callout: none;
+  }
+  
+  #menuToggle span {
+    display: block; /* to ensure that each span element occupies its own line. */
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px; /* create some spacing between the span elements. */
+    position: relative; /* allow for positioning changes in relation to the parent div.*/
+    background: #cdcdcd;
+    border-radius: 3px;
+    z-index: 1; /* ensure that the span element is under the checkbox */
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+      background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+    transform-origin: 4px 0px; /* set to 4px 0px to specify the center of rotation for the transform property above. */
+  }
+  
+  #menuToggle input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
+  }
+  
+  #menuToggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+  
+  #menuToggle input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+  }
+  #menu {
+    position: absolute;
+    left: -300px;
+    top: 80px;
+    width: 200px;
+    margin: -100px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+    background: pink;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+  
+    transition: left 0.5s;
+    
+  }
+  
+  #menu li {
+    padding: 10px 0;
+    font-size: 22px;
+  }
+  #menuToggle input:checked ~ ul {
+    left: 40px;
+  }
+  
 
 
 /* HomeSection */
@@ -216,6 +301,15 @@ header > a{
     font-weight: 25;
 }
 
+#hometext{
+    font-family: "Anek Devanagari", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 60px;
+    color: white;
+    display: none;
+}
+
 #LearnMore1{
     font-family: "Inter", sans-serif;
     font-weight: 25;
@@ -318,9 +412,13 @@ footer{
     height: 30rem;
     background-color: #4A55A2;
 }
-.logo{
+/* .logo{
     margin-left: 2rem;
     margin-top: 2rem;
+} */
+
+#mobilelogo{
+    display: none;
 }
 .containerfooter{
     margin-top: 5rem;
@@ -403,6 +501,139 @@ footer{
     color: white;
 }
 
+
+/* burgernav */
+
+.logomobile{
+    display: none;
+}
+
+.sidenav {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: -50%;
+    background-color:#7895CB;
+    padding-top: 60px;
+    transition: left 0.5s ease;
+  }
+
+ 
+  .sidenav a {
+    font-family: "Inter", sans-serif;
+    font-weight: 200;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 100px;
+    color:white;
+    display: block;
+    transition: 0.3s;
+    margin-bottom: 1.01em;
+  }
+
+  .sidenav a:hover {
+    color: #111;
+  }
+
+  .sidenav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* Active class */
+  .sidenav.active {
+    left: 0;
+  }
+
+  /* Close btn */
+  .sidenav .close {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 100px;
+  }
+
+  /* Icône burger */
+  .burger-icon span {
+    display: none;
+    width: 80px;
+    height: 15px;
+    background-color: white;
+    margin: 6px 0;
+  }
+  .burger-icon{
+    
+    
+  }
+
+  
+ 
+
+
+     /* mobile : 767 */
+
+@media (max-width: 768px) {
+    
+    .back{
+        width: 400%;
+        height: 140rem;
+    }
+
+    #mobilelogo{
+        display: inline;
+        width: 20em;
+        margin-top: 2em;
+    }
+    header > a img{
+        display: none;
+    }
+    header ul li a{
+        display: none;
+    }
+    .logsign{
+        display: none;
+    }
+    .First-Home-elements > h2{
+        display: none;
+    }
+    #hometext{
+        display: inline;
+        font-size: 10rem;
+    }
+    .Home-inputs button{
+        width: 30rem;
+        height: 7rem;
+        margin-top: 6em;
+        font-size: 25px;
+    }
+    .Home-inputs:last-child {
+        font-size: 25px;
+    }
+    .Home-inputs:last-child img{
+        width: 45px;
+    }
+    .elementmobile{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .burger-icon span{
+        display: block;
+    }
+    
+    
+
+
+}
+@media (width : 768){
+    .First-Home-elements h2{
+        
+    }
+    
+}
 
 
 
