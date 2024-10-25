@@ -1,1 +1,428 @@
 /* Projects Page CSS */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,600;1,14..32,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari&display=swap');
+
+
+/* Header */
+
+
+body{
+    margin: 0;
+ }
+
+.background-image{
+    /* background-color: red; */
+    background-image: url(../imgs/investbg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70vh;
+    background-position: center;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2em 5em;
+}
+header ul {
+    display: flex;
+    gap: 4em;
+}
+header ul li a{
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    color: black;
+    font-size: 1.5em;
+    color: white;
+}
+header ul li{   
+    list-style-type: none;
+}   
+header > a{
+    padding-left: .9em;
+}
+
+.logsign button{
+    height: 3em;
+    width: 5em;
+    border-radius: 30em;
+    border: none;
+    outline: none;
+    font-family: "inter" , sans-serif;
+    font-weight: 400;
+}
+.logsign button:first-child{
+    width: 10em;
+    position: relative;
+    left: 5.1em;
+    padding-right: 5em;
+    background-color: #7895CB;
+    transition: ease .4s;
+    color: white;
+}
+.logsign button:first-child:hover{
+    background-color: #402E7A;
+}
+.logsign button:last-child{
+    background-color: white;
+    position: relative;
+    width: 6em;
+    color: #5C59A8;
+    transition: ease .4s;
+}
+.logsign button:last-child:hover{
+    background-color: #c0bfbf;
+}
+
+
+
+#background-text{
+    color: white;
+    text-align: center;
+    font-size: 4em;
+    font-family: "Inter", sans-serif;
+    font-weight: 900;
+    margin-bottom: 100em;
+
+}
+
+
+
+/* section css */
+
+#section-text{
+    text-align: center;
+    color: black;
+    font-size: 3em;
+    margin-top: 2em;
+    font-family: "Inter", sans-serif;
+    font-weight: 900;
+
+}
+
+.cards-container{
+    max-width: 100%;
+    display: grid;
+	grid-template-columns: 360px 360px 360px;
+	align-items: center;
+	grid-gap: 5em;
+	justify-content: center;
+    margin-bottom: 5em;
+
+}
+
+.cards{
+    background-color: #D9D9D9;
+    height: 32em;
+    border-radius: 17px;
+
+
+}
+
+.cards img{
+    /* position: relative; */
+    bottom: 0.5em;
+    width: 100%;
+    height: 12.5em;
+}
+
+.cards h4 {
+    font-family: Int;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: "Inter", sans-serif;
+}
+
+
+.cards p {
+    font-size: 1.5em;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    font-family: "Inter", sans-serif;
+
+    
+
+}
+
+
+.card-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #402E7A;
+    border: #402E7A;
+    color: white;
+    margin-left: 1.2em;
+    width: 12.5em;
+    padding: 0.8em;
+    border-radius: 21px;
+    font-size: 1.5em;
+    position: relative;
+    top: 1em;
+  
+}
+
+#see-more{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    font-family: "Inter", sans-serif;
+
+
+}
+
+#see-more-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #402E7A;
+    border: #402E7A;
+    color: white;
+    margin-left: 1.2em;
+    width: 12.5em;
+    padding: 0.8em;
+    border-radius: 21px;
+    font-size: 1.5em;
+    position: relative;
+    left: 19.2em;
+   
+}
+
+#partners-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../imgs/handshake.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 20em;
+}
+
+#partners-section h4 {
+    color: black;
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 3em ;
+    font-family: "Inter", sans-serif;
+                           
+}
+
+.partners-carousel {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+}
+
+
+
+
+/* footer */
+
+footer{
+    margin-top: 3em;
+    height: 30rem;
+    background-color: #4A55A2;
+}
+.logo{
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+.containerfooter{
+    margin-top: 5rem;
+    display: flex;
+    gap :10rem;
+    justify-content: center;
+    color: white; 
+}
+.grandTitreFooter{
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: x-large;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+#Connact{
+    margin-bottom: 3.9em;
+}
+.elementsFooter{
+    font-family: "Inter", sans-serif;
+    font-weight: 200;
+    line-height: 2em;
+}
+
+#socials{
+    text-align: center;
+}
+.imagelink{
+    display: flex;
+    gap:10px;
+}
+
+.socials {
+    cursor: pointer;
+}
+.imagelink img{
+    width: 40px;
+}
+.inputFooter{
+        background-color: white;
+        border-radius: 44px;
+        border: none;
+        height: 2rem;
+        padding: 10px;
+        outline: none;
+}
+.inputFooter{
+    width: 20em;
+}
+.btefooter{
+        background-color: #7895CB;
+         border-radius: 44px;
+         border: none;
+         padding: 10px 16px;
+         color: white; 
+         margin-top: 2rem;
+         cursor: pointer;
+        transition-duration: .4s;
+        position: relative;
+        right: 7.8em;
+        height: 3.2em;
+}
+
+.button:hover{
+    background-color:#402E7A ;
+}
+
+.btefooter{
+    font-family: "Inter", sans-serif;
+    font-weight: 200;
+}
+
+.inputFooter::placeholder{
+    font-size: 15px;
+    font-family: "Inter", sans-serif;
+    font-weight: 200;
+}
+
+#copyright{
+    font-family: "Inter", sans-serif;
+    font-weight: 200;
+    text-align: center;
+    margin-top: 5.5em;
+    color: white;
+}
+
+
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+    .background-image{
+        height: 200vh;
+        width: 350%;
+    }
+    .background-image header ul li a{
+        display: none;
+    }
+    
+    #background-text{
+        font-size: 9em;
+        font-weight: 900;
+        margin-top: 2em;  
+        margin-left: 10%;
+        text-align: start; 
+         
+    }
+
+    #section-text{
+        color: black;
+        font-size: 4em;
+        font-weight: 900;
+    
+    }
+
+    .cards-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 175%;
+    }
+
+    .cards{
+        background-color: #D9D9D9;
+        height: 70em;
+        width: 50em;
+        
+
+    
+    }
+    .cards img{
+        bottom: 0.5em;
+        width: 100%;
+        height: 30.5em;
+    }
+
+    .cards h4 {
+        text-align: center;
+        font-size: 3em;
+        font-family: "Inter", sans-serif;
+    }
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  }
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+
+   
+  }
+
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+
+    
+  }
+
+@media (max-width: 1280px) {
+   
+
+    
+  }
+
+  
+  
+  
+  
+
+
+  
