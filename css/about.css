@@ -70,6 +70,16 @@ header > a{
     font-family: "inter" , sans-serif;
     font-weight: 400;
 }
+
+.logsign button a{
+    text-decoration: none;
+    color:white ;
+}
+
+.logsign button:last-child a{
+    color: #5C59A8;
+}
+
 .logsign button:first-child{
     width: 10em;
     position: relative;
@@ -78,6 +88,7 @@ header > a{
     background-color: #7895CB;
     transition: ease .4s;
     color: white;
+    cursor: pointer;
 }
 .logsign button:first-child:hover{
     background-color: #402E7A;
@@ -88,6 +99,7 @@ header > a{
     width: 6em;
     color: #5C59A8;
     transition: ease .4s;
+    cursor: pointer;
 }
 .logsign button:last-child:hover{
     background-color: #c0bfbf;
