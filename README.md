@@ -1,7 +1,3 @@
-Here's an updated README with the team contributors section:
-
----
-
 # FutureBank
 
 Welcome to **FutureBank** – a collaborative project designed to provide a seamless banking experience through a user-friendly interface, robust functionality, and comprehensive features. This repository contains the source code for a multipage website designed with a focus on responsiveness, SEO best practices, and a streamlined user experience.
