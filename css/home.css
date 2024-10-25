@@ -107,22 +107,22 @@ header > a{
     opacity: 0;
     width: 40px;
   
-    z-index: 2; /* in order to place the checkbox over the hamburguer */
+    z-index: 2; 
     -webkit-touch-callout: none;
   }
   
   #menuToggle span {
-    display: block; /* to ensure that each span element occupies its own line. */
+    display: block; 
     width: 33px;
     height: 4px;
-    margin-bottom: 5px; /* create some spacing between the span elements. */
-    position: relative; /* allow for positioning changes in relation to the parent div.*/
+    margin-bottom: 5px; 
+    position: relative; 
     background: #cdcdcd;
     border-radius: 3px;
-    z-index: 1; /* ensure that the span element is under the checkbox */
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+    z-index: 1; 
+    transition: 
       background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
-    transform-origin: 4px 0px; /* set to 4px 0px to specify the center of rotation for the transform property above. */
+    transform-origin: 4px 0px;
   }
   
   #menuToggle input:checked ~ span {
@@ -177,9 +177,7 @@ header > a{
     font-size: 60px;
     color: white;
 }
-.Home-inputs{
-    
-}
+
 .Home-inputs button{
     width: 14em;
     height: 5em;
@@ -510,14 +508,14 @@ footer{
 
 .sidenav {
     height: 100%;
-    width: 50%;
+    width: 650px;
     position: fixed;
     z-index: 1;
     top: 0;
-    left: -50%;
+    right: -50%;
     background-color:#7895CB;
     padding-top: 60px;
-    transition: left 0.5s ease;
+    transition: right 0.5s ease;
   }
 
  
@@ -545,7 +543,7 @@ footer{
 
   /* Active class */
   .sidenav.active {
-    left: 0;
+    right: 0;
   }
 
   /* Close btn */
@@ -564,13 +562,12 @@ footer{
     background-color: white;
     margin: 6px 0;
   }
-  .burger-icon{
-    
-    
-  }
-
-  
  
+
+
+
+
+
 
 
      /* mobile : 767 */
@@ -579,14 +576,15 @@ footer{
     
     .back{
         width: 400%;
-        height: 140rem;
+        height: 190rem;
     }
 
     #mobilelogo{
         display: inline;
-        width: 20em;
+        width: 30em;
         margin-top: 2em;
     }
+    
     header > a img{
         display: none;
     }
@@ -601,39 +599,71 @@ footer{
     }
     #hometext{
         display: inline;
-        font-size: 10rem;
+        font-size: 15rem;
     }
     .Home-inputs button{
-        width: 30rem;
-        height: 7rem;
+        width: 45rem;
+        height: 11rem;
         margin-top: 6em;
-        font-size: 25px;
+        font-size: 30px;
     }
     .Home-inputs:last-child {
-        font-size: 25px;
+        font-size: 30px;
     }
     .Home-inputs:last-child img{
         width: 45px;
     }
     .elementmobile{
         display: flex;
-        justify-content: space-between;
+        align-items: center;
+        justify-content: space-around;
+        gap: 30em;
     }
+    
 
     .burger-icon span{
         display: block;
     }
-    
-    
 
+    .ourservices > h2{
+        font-size: 90px;
+        text-align: center;
+        margin: 1.2em 0;
+        margin-left: 15em;
+        display: flex;
+    }
 
-}
-@media (width : 768){
-    .First-Home-elements h2{
-        
+    .box-container {
+        display: grid;
+        grid-template-columns: auto;
+        margin-left: 40em;
+    }
+    .box img{
+        width: 30em;
+        height: auto;
     }
     
+    
+
+
 }
+
+
+
+@media (max-width : 320px){
+
+    .elementmobile{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 20em;
+    }
+}
+
+
+
+
+
 
 
 
