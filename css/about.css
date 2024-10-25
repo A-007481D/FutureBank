@@ -322,58 +322,60 @@ input{
 /* .logomobile{
     display: none;
 } */
-.sidenav {
+
+  .sidenav {
     height: 100%;
-    width: 250px;
+    width: 220px;
     position: fixed;
     z-index: 1;
     top: 0;
-    left: -250px;
-    background-color:#7895CB;
+    right: -250px; 
+    background-color : #7895CB;
     padding-top: 60px;
-    transition: left 0.5s ease;
-  }
+    transition: right 0.5s ease; 
+}
 
-  .sidenav a {
+.sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color:white;
+    color: white;
     display: block;
     transition: 0.3s;
-  }
+}
 
-  .sidenav a:hover {
+.sidenav a:hover {
     color: #111;
-  }
+}
 
-  .sidenav ul {
+.sidenav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-  }
+}
 
-  .sidenav.active {
-    left: 0;
-  }
+.sidenav.active {
+    right: 0; 
+}
 
-  .sidenav .close {
+.sidenav .close {
     position: absolute;
     top: 0;
-    right: 25px;
+    right: 20px;
     font-size: 36px;
-  }
+}
 
-  .burger-icon span {
+.burger-icon {
+    padding: 30px;
+}
+
+.burger-icon span {
     display: none;
     width: 35px;
     height: 5px;
-    background-color: rgb(251, 248, 248);
+    background-color: black;
     margin: 6px 0;
-  }
-
-
-
+}
 
 @keyframes scroll {
     0% {
