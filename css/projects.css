@@ -242,10 +242,10 @@ footer{
     height: 30rem;
     background-color: #4A55A2;
 }
-.logo{
+/* .logo{
     margin-left: 2rem;
     margin-top: 2rem;
-}
+} */
 .containerfooter{
     margin-top: 5rem;
     display: flex;
