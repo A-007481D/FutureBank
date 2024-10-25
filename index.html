@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS UNIVERSAL -->
@@ -11,9 +12,37 @@
 </head>
 <body>
     <div class="back">
+
+      <div class="elementmobile">
+        
+        
+        <a href=""><img  id="mobilelogo" src="/HomeImg/FutureBank-mobile.png" alt=""></a>
+        <div id="mySidenav" class="sidenav">
+          <a id="closeBtn" href="#" class="close">×</a>
+          <ul>
+            <li><a style="margin-top: 60px;" href="">Home</a></li>
+            <li><a href="">Investment</a></li>
+            <li><a href="">Loaning</a></li>
+            <li><a href="">Contact us</a></li>
+            <li><a href="">About us</a></li>
+            <li><a href="">Log in</a></li>
+            <li><a href="">Sign Up</a></li>
+          </ul>
+        </div>
+    
+        <a href="#" id="openBtn">
+          <span class="burger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </a>
+      </div>
+    
     <header>
             <a href=""><img src="../HomeImg/logo1.png" alt="LOGO"></a>
-        
+
+            
 
             <ul>
                 <li><a href="../index.html">Home</a></li>
@@ -34,7 +63,7 @@
     <section class="First-Home-elements">
 
         <h2>Empowering Your <br>Financial Future</h2>
-
+        <h2 id="hometext">Empowering <br>Your Financial <br> Future</h2>
         <div class="Home-inputs">
             <button><a href="../html/registration.html">Registration</a></button>
             <a href="">Learn More<img src="../HomeImg/Vector.png" alt="Flesh"></a>
@@ -151,7 +180,7 @@
 
     <section class="LoanHome">
         <div class="loadcontainer">
-        <img src="../HomeImg/loanpage.png" alt="Computer">
+        <img src="/HomeImg/loanpage.png" alt="Computer">
 
         <div class="loanpagetext">
             <h2>Loan on FutureBank</h2>
@@ -225,6 +254,26 @@
        </footer>
 
 
+
+       <script>
+        var sidenav = document.getElementById("mySidenav");
+    var openBtn = document.getElementById("openBtn");
+    var closeBtn = document.getElementById("closeBtn");
+    
+    openBtn.onclick = openNav;
+    closeBtn.onclick = closeNav;
+    
+    
+    function openNav() {
+      sidenav.classList.add("active");
+    }
+    
+    
+    function closeNav() {
+      sidenav.classList.remove("active");
+    }
+    
+        </script>
 
 
 </body>
