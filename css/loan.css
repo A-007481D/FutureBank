@@ -281,7 +281,7 @@ footer{
     position: fixed;
     z-index: 1;
     top: 0;
-    left: -250px;
+    right: -250px;
     background-color:#7895CB;
     padding-top: 60px;
     transition: left 0.5s ease;
@@ -305,24 +305,25 @@ footer{
   }
   /* Active class */
   .sidenav.active {
-    left: 0;
+    right:  0;
   }
   /* Close btn */
   .sidenav .close {
     position: absolute;
     top: 0;
-    left: 20px;
+    right:20px;
     font-size: 36px;
   }
   .burger-icon{
-    padding: 30px;
+    
+    padding: 60px;
   }
   /* Icône burger */
   .burger-icon span {
     display: none;
     width: 35px;
     height: 5px;
-    background-color: black;
+    background-color: white;
     margin: 6px 0; 
   }
 @media(min-width:1196px) and (max-width:1279px)
