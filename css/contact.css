@@ -169,11 +169,12 @@ footer{
     /* margin-top: 12em; */
     height: 30rem;
     background-color: #4A55A2;
+    height: 500px;
 }
-/* .logo{
+.logo{
     margin-left: 2rem;
     margin-top: 2rem;
-} */
+}
 
 #mobilelogo{
   display: none;
@@ -255,7 +256,7 @@ footer{
   font-family: "Inter", sans-serif;
   font-weight: 200;
   text-align: center;
-  margin-top: 5.5em;
+  margin-top: 4.5em;
   color: white;
 }
 .logomobile{
@@ -339,6 +340,7 @@ footer{
   .content h2 {
     font-size: 6vh;
   } 
+
 }
 @media (max-width:1280px) and (min-width:1024px){
   header ul {
@@ -413,6 +415,9 @@ footer{
   .burger-icon span{
     display: block;
   }
+  footer {
+    display: none;
+  }
 }
 @media(max-width:767px){
   .header {
@@ -466,5 +471,8 @@ footer{
   }
   .burger-icon span{
     display: block;
+  }
+  footer {
+    display: none;
   }
 }

@@ -13,7 +13,6 @@ body{
 header{
     display: flex;
     align-items: center;
-    justify-content: space-between;
     padding: 2em 5em;
 }
 header ul {
@@ -79,6 +78,92 @@ header > a{
     background-color: #c0bfbf;
 }
 
+#menuToggle {
+   
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  #menuToggle a
+  {
+    text-decoration: none;
+    color: #232323;
+    
+    transition: color 0.3s ease;
+  }
+  
+  
+  #menuToggle span:first-child {
+    transform-origin: 0% 0%;
+  }
+  
+  #menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+  }
+  
+  #menuToggle input {
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    width: 40px;
+  
+    z-index: 2; 
+    -webkit-touch-callout: none;
+  }
+  
+  #menuToggle span {
+    display: block; 
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px; 
+    position: relative; 
+    background: #cdcdcd;
+    border-radius: 3px;
+    z-index: 1; 
+    transition: 
+      background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+    transform-origin: 4px 0px;
+  }
+  
+  #menuToggle input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
+  }
+  
+  #menuToggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+  
+  #menuToggle input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+  }
+  #menu {
+    position: absolute;
+    left: -300px;
+    top: 80px;
+    width: 200px;
+    margin: -100px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+    background: pink;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+  
+    transition: left 0.5s;
+    
+  }
+  
+  #menu li {
+    padding: 10px 0;
+    font-size: 22px;
+  }
+  #menuToggle input:checked ~ ul {
+    left: 40px;
+  }
+  
+
 
 /* HomeSection */
 
@@ -92,9 +177,7 @@ header > a{
     font-size: 60px;
     color: white;
 }
-.Home-inputs{
-    
-}
+
 .Home-inputs button{
     width: 14em;
     height: 5em;
@@ -216,6 +299,15 @@ header > a{
     font-weight: 25;
 }
 
+#hometext{
+    font-family: "Anek Devanagari", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 60px;
+    color: white;
+    display: none;
+}
+
 #LearnMore1{
     font-family: "Inter", sans-serif;
     font-weight: 25;
@@ -241,10 +333,332 @@ header > a{
     text-decoration:underline;
 }
 
+.investment-section input{
+    margin: 4em 41em;
+    width: 12em;
+    height: 3em;
+    border-radius: .9em;
+    border: none;
+    background-color: #7895CB;
+    color: white;
+    cursor: pointer;
+    transition-duration: .4s;
+}
+.investment-section input[value]{
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 1em;
+}
+.investment-section input:hover{
+    background-color: #402E7A;
+}
+
+
+/* WhychooseFutureBank */
+
+.Chcontainer{
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    margin-left: 2em;
+}
+
+.ChooseFutureBank h2{
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 2em;
+    text-align: center;
+}
+.Chcontainer img{
+    margin: 0 0 6em 6em;
+}
+
+
+/* loadsection */
+
+.loadcontainer{
+    display: flex;
+    padding-left: 6em;
+    background-color: #D9D9D9;
+    gap: 5em;
+    height: 35em;
+}
+.loadcontainer img{
+    height: 30em;
+    margin-top: 2em;
+}
+
+.loanpagetext{
+    padding-top: 3em;
+}
+.loadcontainer h2{
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 2em;
+}
+.loadcontainer p{
+    font-family: "Inter", sans-serif;
+    font-weight: 200;
+    font-size: 1.2em;
+}
+
+
+
+/* footer */
+
+footer{
+    margin-top: 12em;
+    height: 30rem;
+    background-color: #4A55A2;
+}
+/* .logo{
+    margin-left: 2rem;
+    margin-top: 2rem;
+} */
+
+#mobilelogo{
+    display: none;
+}
+.containerfooter{
+    margin-top: 5rem;
+    display: flex;
+    gap :10rem;
+    justify-content: center;
+    color: white; 
+}
+.grandTitreFooter{
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: x-large;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+#Connact{
+    margin-bottom: 3.9em;
+}
+.elementsFooter{
+    font-family: "Inter", sans-serif;
+    font-weight: 200;
+    line-height: 2em;
+}
+
+#socials{
+    text-align: center;
+}
+.imagelink{
+    display: flex;
+    gap:10px
+}
+
+.imagelink img{
+    width: 40px;
+}
+.inputFooter{
+        background-color: white;
+        border-radius: 44px;
+        border: none;
+        height: 2rem;
+        padding: 10px;
+        outline: none;
+}
+.inputFooter{
+    width: 20em;
+}
+.btefooter{
+        background-color: #7895CB;
+         border-radius: 44px;
+         border: none;
+         padding: 10px 16px;
+         color: white; 
+         margin-top: 2rem;
+         cursor: pointer;
+        transition-duration: .4s;
+        position: relative;
+        right: 8em;
+}
+
+.button:hover{
+    background-color:#402E7A ;
+}
+
+.btefooter{
+    font-family: "Inter", sans-serif;
+    font-weight: 200;
+}
+
+.inputFooter::placeholder{
+    font-size: 15px;
+    font-family: "Inter", sans-serif;
+    font-weight: 200;
+}
+
+#copyright{
+    font-family: "Inter", sans-serif;
+    font-weight: 200;
+    text-align: center;
+    margin-top: 5.5em;
+    color: white;
+}
+
+
+/* burgernav */
+
+.logomobile{
+    display: none;
+}
+
+.sidenav {
+    height: 100%;
+    width: 650px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: -50%;
+    background-color:#7895CB;
+    padding-top: 60px;
+    transition: right 0.5s ease;
+  }
+
+ 
+  .sidenav a {
+    font-family: "Inter", sans-serif;
+    font-weight: 200;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 100px;
+    color:white;
+    display: block;
+    transition: 0.3s;
+    margin-bottom: 1.01em;
+  }
+
+  .sidenav a:hover {
+    color: #111;
+  }
+
+  .sidenav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* Active class */
+  .sidenav.active {
+    right: 0;
+  }
+
+  /* Close btn */
+  .sidenav .close {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 100px;
+  }
+
+  /* Icône burger */
+  .burger-icon span {
+    display: none;
+    width: 80px;
+    height: 15px;
+    background-color: white;
+    margin: 6px 0;
+  }
+ 
 
 
 
 
+
+
+
+     /* mobile : 767 */
+
+@media (max-width: 768px) {
+    
+    .back{
+        width: 400%;
+        height: 190rem;
+    }
+
+    #mobilelogo{
+        display: inline;
+        width: 30em;
+        margin-top: 2em;
+    }
+    
+    header > a img{
+        display: none;
+    }
+    header ul li a{
+        display: none;
+    }
+    .logsign{
+        display: none;
+    }
+    .First-Home-elements > h2{
+        display: none;
+    }
+    #hometext{
+        display: inline;
+        font-size: 15rem;
+    }
+    .Home-inputs button{
+        width: 45rem;
+        height: 11rem;
+        margin-top: 6em;
+        font-size: 30px;
+    }
+    .Home-inputs:last-child {
+        font-size: 30px;
+    }
+    .Home-inputs:last-child img{
+        width: 45px;
+    }
+    .elementmobile{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 30em;
+    }
+    
+
+    .burger-icon span{
+        display: block;
+    }
+
+    .ourservices > h2{
+        font-size: 90px;
+        text-align: center;
+        margin: 1.2em 0;
+        margin-left: 15em;
+        display: flex;
+    }
+
+    .box-container {
+        display: grid;
+        grid-template-columns: auto;
+        margin-left: 40em;
+    }
+    .box img{
+        width: 30em;
+        height: auto;
+    }
+    
+    
+
+
+}
+
+
+
+@media (max-width : 320px){
+
+    .elementmobile{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 20em;
+    }
+}
 
 
 

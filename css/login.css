@@ -120,6 +120,11 @@ header > a{
   flex-direction: row-reverse;
   gap: 40px;
 }
+.contact form div{
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 40px;
+}
 .contact form .btn {
   width: 10em;
   background-color: #7895CB;
@@ -127,6 +132,7 @@ header > a{
   font-weight: 600;
   font-size: 2vh;
   padding: 0;
+  margin-top: 0.5em;
   margin-top: 0.5em;
 }
 .contact form .btn:hover {
@@ -397,3 +403,4 @@ a {
     display: block;
   }
 }
+
