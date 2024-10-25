@@ -9,7 +9,7 @@ body{
 .header {
   display: flex;
   padding: 1em 2em;
-  background-color: #402E7A;
+  background-color: #4A55A2;
   justify-content: space-between;
 }
 header{
@@ -163,6 +163,102 @@ hr {
   border: #fff solid 0.2em;
   border-radius: 1em;
 }
+/* footer */
+
+footer{
+    /* margin-top: 12em; */
+    height: 30rem;
+    background-color: #4A55A2;
+    height: 500px;
+}
+.logo{
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+
+#mobilelogo{
+  display: none;
+}
+.containerfooter{
+  margin-top: 5rem;
+  display: flex;
+  gap :10rem;
+  justify-content: center;
+  color: white; 
+}
+.grandTitreFooter{
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: x-large;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+#Connact{
+  margin-bottom: 3.9em;
+}
+.elementsFooter{
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
+  line-height: 2em;
+}
+
+#socials{
+  text-align: center;
+}
+.imagelink{
+  display: flex;
+  gap:10px
+}
+
+.imagelink img{
+  width: 40px;
+}
+.inputFooter{
+      background-color: white;
+      border-radius: 44px;
+      border: none;
+      height: 2rem;
+      padding: 10px;
+      outline: none;
+}
+.inputFooter{
+  width: 20em;
+}
+.btefooter{
+      background-color: #7895CB;
+       border-radius: 44px;
+       border: none;
+       padding: 10px 16px;
+       color: white; 
+       margin-top: 2rem;
+       cursor: pointer;
+      transition-duration: .4s;
+      position: relative;
+      right: 8em;
+}
+
+.button:hover{
+  background-color:#402E7A ;
+}
+
+.btefooter{
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
+}
+
+.inputFooter::placeholder{
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
+}
+
+#copyright{
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
+  text-align: center;
+  margin-top: 4.5em;
+  color: white;
+}
 .logomobile{
   display: none;
 }
@@ -244,6 +340,7 @@ hr {
   .content h2 {
     font-size: 6vh;
   } 
+
 }
 @media (max-width:1280px) and (min-width:1024px){
   header ul {
@@ -318,6 +415,9 @@ hr {
   .burger-icon span{
     display: block;
   }
+  footer {
+    display: none;
+  }
 }
 @media(max-width:767px){
   .header {
@@ -371,5 +471,8 @@ hr {
   }
   .burger-icon span{
     display: block;
+  }
+  footer {
+    display: none;
   }
 }
